@@ -41,6 +41,14 @@ public:
 
     std::shared_ptr<Factory> get_factory_ptr();
 
+    int get_max_field_time() { return max_field_time; }
+
+    int get_max_field_minerals() { return max_field_minerals; }
+
+    std::pair<int, int> get_robot_position();
+
+    std::pair<int, int> get_factory_position();
+
 private:
 
     void travel_to_field(int x, int y);
@@ -48,6 +56,9 @@ private:
     std::vector<std::vector<int>> field_materials;
 
     std::vector<std::vector<int>> field_times;
+
+    int max_field_time;
+    int max_field_minerals;
 
     long int time_passed;
 

@@ -76,6 +76,7 @@ include CMakeFiles/Robot.dir/progress.make
 include CMakeFiles/Robot.dir/flags.make
 
 CMakeFiles/Robot.dir/main.cpp.obj: CMakeFiles/Robot.dir/flags.make
+CMakeFiles/Robot.dir/main.cpp.obj: CMakeFiles/Robot.dir/includes_CXX.rsp
 CMakeFiles/Robot.dir/main.cpp.obj: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Benja\CLionProjects\Robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Robot.dir/main.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Robot.dir\main.cpp.obj -c C:\Users\Benja\CLionProjects\Robot\main.cpp
@@ -89,6 +90,7 @@ CMakeFiles/Robot.dir/main.cpp.s: cmake_force
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Benja\CLionProjects\Robot\main.cpp -o CMakeFiles\Robot.dir\main.cpp.s
 
 CMakeFiles/Robot.dir/src/World.cpp.obj: CMakeFiles/Robot.dir/flags.make
+CMakeFiles/Robot.dir/src/World.cpp.obj: CMakeFiles/Robot.dir/includes_CXX.rsp
 CMakeFiles/Robot.dir/src/World.cpp.obj: ../src/World.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Benja\CLionProjects\Robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Robot.dir/src/World.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Robot.dir\src\World.cpp.obj -c C:\Users\Benja\CLionProjects\Robot\src\World.cpp
@@ -102,6 +104,7 @@ CMakeFiles/Robot.dir/src/World.cpp.s: cmake_force
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Benja\CLionProjects\Robot\src\World.cpp -o CMakeFiles\Robot.dir\src\World.cpp.s
 
 CMakeFiles/Robot.dir/src/Display.cpp.obj: CMakeFiles/Robot.dir/flags.make
+CMakeFiles/Robot.dir/src/Display.cpp.obj: CMakeFiles/Robot.dir/includes_CXX.rsp
 CMakeFiles/Robot.dir/src/Display.cpp.obj: ../src/Display.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Benja\CLionProjects\Robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Robot.dir/src/Display.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Robot.dir\src\Display.cpp.obj -c C:\Users\Benja\CLionProjects\Robot\src\Display.cpp
@@ -115,6 +118,7 @@ CMakeFiles/Robot.dir/src/Display.cpp.s: cmake_force
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Benja\CLionProjects\Robot\src\Display.cpp -o CMakeFiles\Robot.dir\src\Display.cpp.s
 
 CMakeFiles/Robot.dir/src/Factory.cpp.obj: CMakeFiles/Robot.dir/flags.make
+CMakeFiles/Robot.dir/src/Factory.cpp.obj: CMakeFiles/Robot.dir/includes_CXX.rsp
 CMakeFiles/Robot.dir/src/Factory.cpp.obj: ../src/Factory.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Benja\CLionProjects\Robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Robot.dir/src/Factory.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Robot.dir\src\Factory.cpp.obj -c C:\Users\Benja\CLionProjects\Robot\src\Factory.cpp
@@ -128,6 +132,7 @@ CMakeFiles/Robot.dir/src/Factory.cpp.s: cmake_force
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Benja\CLionProjects\Robot\src\Factory.cpp -o CMakeFiles\Robot.dir\src\Factory.cpp.s
 
 CMakeFiles/Robot.dir/src/Robot.cpp.obj: CMakeFiles/Robot.dir/flags.make
+CMakeFiles/Robot.dir/src/Robot.cpp.obj: CMakeFiles/Robot.dir/includes_CXX.rsp
 CMakeFiles/Robot.dir/src/Robot.cpp.obj: ../src/Robot.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Benja\CLionProjects\Robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Robot.dir/src/Robot.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Robot.dir\src\Robot.cpp.obj -c C:\Users\Benja\CLionProjects\Robot\src\Robot.cpp
@@ -157,6 +162,10 @@ Robot.exe: CMakeFiles/Robot.dir/src/Display.cpp.obj
 Robot.exe: CMakeFiles/Robot.dir/src/Factory.cpp.obj
 Robot.exe: CMakeFiles/Robot.dir/src/Robot.cpp.obj
 Robot.exe: CMakeFiles/Robot.dir/build.make
+Robot.exe: C:/Users/Benja/CLionProjects/SFML_Install/lib/libsfml-graphics-d.a
+Robot.exe: C:/Users/Benja/CLionProjects/SFML_Install/lib/libsfml-audio-d.a
+Robot.exe: C:/Users/Benja/CLionProjects/SFML_Install/lib/libsfml-window-d.a
+Robot.exe: C:/Users/Benja/CLionProjects/SFML_Install/lib/libsfml-system-d.a
 Robot.exe: CMakeFiles/Robot.dir/linklibs.rsp
 Robot.exe: CMakeFiles/Robot.dir/objects1.rsp
 Robot.exe: CMakeFiles/Robot.dir/link.txt

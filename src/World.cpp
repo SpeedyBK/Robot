@@ -38,6 +38,15 @@ World::World(int n) {
         field_materials.at(y).at(x)++;
     }
 
+    max_field_time = 0;
+    max_field_minerals = 0;
+    for (auto &y_it : field_times){
+        for(auto &x_it : y_it){
+            max_field_time = std::max(max_field_time, x_it);
+            max_field_minerals = std::max(max_field_minerals, x_it);
+        }
+    }
+
     F = std::make_shared<Factory>(n/2, n-1, this);
     R = std::make_shared<Robot>(F->get_position().first, F->get_position().second, this);
 
@@ -109,6 +118,14 @@ void World::print_materials() {
 
 std::shared_ptr<Factory> World::get_factory_ptr() {
     return F;
+}
+
+std::pair<int, int> World::get_robot_position() {
+    return R->get_position();
+}
+
+std::pair<int, int> World::get_factory_position() {
+    return F->get_position();
 }
 
 
