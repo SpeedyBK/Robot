@@ -29,7 +29,7 @@ namespace RobbyTheRobot {
 
         Vertex &create_vertex(int id);
 
-        Edge &create_edge(pair<Vertex*, Vertex*> vsd, int distance);
+        Edge &create_edge(set<Vertex*>vsd, int distance);
 
         void create_vertices_from_map(vector<vector<int>>&world_map);
 

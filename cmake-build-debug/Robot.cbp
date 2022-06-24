@@ -5,154 +5,155 @@
 		<Option title="Robot"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\SFML_Install\;CMake Files\..\SFML_Install\lib\;CMake Files\..\SFML_Install\lib\cmake\;CMake Files\..\SFML_Install\lib\cmake\SFML\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\Dependencies\;CMake Files\..\..\Dependencies\sfml\;CMake Files\..\..\Dependencies\sfml\lib\;CMake Files\..\..\Dependencies\sfml\lib\cmake\;CMake Files\..\..\Dependencies\sfml\lib\cmake\SFML\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/Benja/CLionProjects/Robot/cmake-build-debug"/>
+				<Option working_dir="/home/benjamin/CLionProjects/Robot/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Robot">
-				<Option output="C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/Robot.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Benja/CLionProjects/Robot/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="C:/Users/Benja/CLionProjects/SFML_Install/include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 Robot"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Robot/fast">
-				<Option output="C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/Robot.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Benja/CLionProjects/Robot/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="C:/Users/Benja/CLionProjects/SFML_Install/include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 Robot/fast"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/Benja/CLionProjects/Robot/cmake-build-debug"/>
+				<Option working_dir="/home/benjamin/CLionProjects/Robot/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/Benja/CLionProjects/Robot/cmake-build-debug"/>
+				<Option working_dir="/home/benjamin/CLionProjects/Robot/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Robot">
+				<Option output="/home/benjamin/CLionProjects/Robot/cmake-build-debug/Robot" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/benjamin/CLionProjects/Robot/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/benjamin/CLionProjects/Robot/SFML_INCLUDE_DIR"/>
+					<Add directory="/home/benjamin/Dependencies/sfml/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 Robot"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Robot/fast">
+				<Option output="/home/benjamin/CLionProjects/Robot/cmake-build-debug/Robot" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/benjamin/CLionProjects/Robot/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/benjamin/CLionProjects/Robot/SFML_INCLUDE_DIR"/>
+					<Add directory="/home/benjamin/Dependencies/sfml/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 Robot/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/Robot/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Benja/CLionProjects/Robot/main.cpp">
+		<Unit filename="/home/benjamin/CLionProjects/Robot/main.cpp">
 			<Option target="Robot"/>
 		</Unit>
-		<Unit filename="C:/Users/Benja/CLionProjects/Robot/src/Display.cpp">
+		<Unit filename="/home/benjamin/CLionProjects/Robot/src/Display.cpp">
 			<Option target="Robot"/>
 		</Unit>
-		<Unit filename="C:/Users/Benja/CLionProjects/Robot/src/Display.h">
+		<Unit filename="/home/benjamin/CLionProjects/Robot/src/Display.h">
 			<Option target="Robot"/>
 		</Unit>
-		<Unit filename="C:/Users/Benja/CLionProjects/Robot/src/Exception.cpp">
+		<Unit filename="/home/benjamin/CLionProjects/Robot/src/Exception.cpp">
 			<Option target="Robot"/>
 		</Unit>
-		<Unit filename="C:/Users/Benja/CLionProjects/Robot/src/Exception.h">
+		<Unit filename="/home/benjamin/CLionProjects/Robot/src/Exception.h">
 			<Option target="Robot"/>
 		</Unit>
-		<Unit filename="C:/Users/Benja/CLionProjects/Robot/src/Factory.cpp">
+		<Unit filename="/home/benjamin/CLionProjects/Robot/src/Factory.cpp">
 			<Option target="Robot"/>
 		</Unit>
-		<Unit filename="C:/Users/Benja/CLionProjects/Robot/src/Factory.h">
+		<Unit filename="/home/benjamin/CLionProjects/Robot/src/Factory.h">
 			<Option target="Robot"/>
 		</Unit>
-		<Unit filename="C:/Users/Benja/CLionProjects/Robot/src/Robot.cpp">
+		<Unit filename="/home/benjamin/CLionProjects/Robot/src/Robot.cpp">
 			<Option target="Robot"/>
 		</Unit>
-		<Unit filename="C:/Users/Benja/CLionProjects/Robot/src/Robot.h">
+		<Unit filename="/home/benjamin/CLionProjects/Robot/src/Robot.h">
 			<Option target="Robot"/>
 		</Unit>
-		<Unit filename="C:/Users/Benja/CLionProjects/Robot/src/World.cpp">
+		<Unit filename="/home/benjamin/CLionProjects/Robot/src/World.cpp">
 			<Option target="Robot"/>
 		</Unit>
-		<Unit filename="C:/Users/Benja/CLionProjects/Robot/src/World.h">
+		<Unit filename="/home/benjamin/CLionProjects/Robot/src/World.h">
 			<Option target="Robot"/>
 		</Unit>
-		<Unit filename="C:/Users/Benja/CLionProjects/Robot/src/graph/Edge.cpp">
+		<Unit filename="/home/benjamin/CLionProjects/Robot/src/graph/Edge.cpp">
 			<Option target="Robot"/>
 		</Unit>
-		<Unit filename="C:/Users/Benja/CLionProjects/Robot/src/graph/Edge.h">
+		<Unit filename="/home/benjamin/CLionProjects/Robot/src/graph/Edge.h">
 			<Option target="Robot"/>
 		</Unit>
-		<Unit filename="C:/Users/Benja/CLionProjects/Robot/src/graph/Graph.cpp">
+		<Unit filename="/home/benjamin/CLionProjects/Robot/src/graph/Graph.cpp">
 			<Option target="Robot"/>
 		</Unit>
-		<Unit filename="C:/Users/Benja/CLionProjects/Robot/src/graph/Graph.h">
+		<Unit filename="/home/benjamin/CLionProjects/Robot/src/graph/Graph.h">
 			<Option target="Robot"/>
 		</Unit>
-		<Unit filename="C:/Users/Benja/CLionProjects/Robot/src/graph/Vertex.cpp">
+		<Unit filename="/home/benjamin/CLionProjects/Robot/src/graph/Vertex.cpp">
 			<Option target="Robot"/>
 		</Unit>
-		<Unit filename="C:/Users/Benja/CLionProjects/Robot/src/graph/Vertex.h">
+		<Unit filename="/home/benjamin/CLionProjects/Robot/src/graph/Vertex.h">
 			<Option target="Robot"/>
 		</Unit>
-		<Unit filename="C:/Users/Benja/CLionProjects/Robot/CMakeLists.txt">
+		<Unit filename="/home/benjamin/CLionProjects/Robot/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="C:/Users/Benja/CLionProjects/Robot/../SFML_Install/lib/cmake/SFML/SFMLConfig.cmake">
-			<Option virtualFolder="CMake Files\..\SFML_Install\lib\cmake\SFML\"/>
+		<Unit filename="/home/benjamin/CLionProjects/Robot/../../Dependencies/sfml/lib/cmake/SFML/SFMLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\Dependencies\sfml\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="C:/Users/Benja/CLionProjects/Robot/../SFML_Install/lib/cmake/SFML/SFMLConfigDependencies.cmake">
-			<Option virtualFolder="CMake Files\..\SFML_Install\lib\cmake\SFML\"/>
+		<Unit filename="/home/benjamin/CLionProjects/Robot/../../Dependencies/sfml/lib/cmake/SFML/SFMLConfigDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\Dependencies\sfml\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="C:/Users/Benja/CLionProjects/Robot/../SFML_Install/lib/cmake/SFML/SFMLConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\SFML_Install\lib\cmake\SFML\"/>
+		<Unit filename="/home/benjamin/CLionProjects/Robot/../../Dependencies/sfml/lib/cmake/SFML/SFMLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\Dependencies\sfml\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="C:/Users/Benja/CLionProjects/Robot/../SFML_Install/lib/cmake/SFML/SFMLSharedTargets-debug.cmake">
-			<Option virtualFolder="CMake Files\..\SFML_Install\lib\cmake\SFML\"/>
+		<Unit filename="/home/benjamin/CLionProjects/Robot/../../Dependencies/sfml/lib/cmake/SFML/SFMLSharedTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\Dependencies\sfml\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="C:/Users/Benja/CLionProjects/Robot/../SFML_Install/lib/cmake/SFML/SFMLSharedTargets-release.cmake">
-			<Option virtualFolder="CMake Files\..\SFML_Install\lib\cmake\SFML\"/>
-		</Unit>
-		<Unit filename="C:/Users/Benja/CLionProjects/Robot/../SFML_Install/lib/cmake/SFML/SFMLSharedTargets.cmake">
-			<Option virtualFolder="CMake Files\..\SFML_Install\lib\cmake\SFML\"/>
+		<Unit filename="/home/benjamin/CLionProjects/Robot/../../Dependencies/sfml/lib/cmake/SFML/SFMLSharedTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\Dependencies\sfml\lib\cmake\SFML\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

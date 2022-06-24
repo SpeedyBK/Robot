@@ -6,6 +6,7 @@
 #define ROBOT_EDGE_H
 
 #include <iostream>
+#include <set>
 
 #include "Vertex.h"
 
@@ -17,9 +18,9 @@ namespace RobbyTheRobot {
 
     public:
 
-        Edge( pair<Vertex*, Vertex*> vsd, int distance, int id);
+        Edge(set<Vertex*> &vsd, int distance, int id);
 
-        pair<Vertex*, Vertex*> get_vertices_of_edge() const { return vsd; }
+        set<Vertex*> get_vertices_of_edge() const { return vsd; }
 
         int get_id() const { return this->id; }
 
@@ -29,7 +30,7 @@ namespace RobbyTheRobot {
 
     private:
 
-        pair<Vertex*, Vertex*> vsd;
+        set<Vertex*> vsd;
 
         int distance;
 

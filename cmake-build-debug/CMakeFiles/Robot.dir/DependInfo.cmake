@@ -1,24 +1,22 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
   )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Benja/CLionProjects/Robot/main.cpp" "C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/CMakeFiles/Robot.dir/main.cpp.obj"
-  "C:/Users/Benja/CLionProjects/Robot/src/Display.cpp" "C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/CMakeFiles/Robot.dir/src/Display.cpp.obj"
-  "C:/Users/Benja/CLionProjects/Robot/src/Exception.cpp" "C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/CMakeFiles/Robot.dir/src/Exception.cpp.obj"
-  "C:/Users/Benja/CLionProjects/Robot/src/Factory.cpp" "C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/CMakeFiles/Robot.dir/src/Factory.cpp.obj"
-  "C:/Users/Benja/CLionProjects/Robot/src/Robot.cpp" "C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/CMakeFiles/Robot.dir/src/Robot.cpp.obj"
-  "C:/Users/Benja/CLionProjects/Robot/src/World.cpp" "C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/CMakeFiles/Robot.dir/src/World.cpp.obj"
-  "C:/Users/Benja/CLionProjects/Robot/src/graph/Edge.cpp" "C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/CMakeFiles/Robot.dir/src/graph/Edge.cpp.obj"
-  "C:/Users/Benja/CLionProjects/Robot/src/graph/Graph.cpp" "C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/CMakeFiles/Robot.dir/src/graph/Graph.cpp.obj"
-  "C:/Users/Benja/CLionProjects/Robot/src/graph/Vertex.cpp" "C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/CMakeFiles/Robot.dir/src/graph/Vertex.cpp.obj"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "C:/Users/Benja/CLionProjects/SFML_Install/include"
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/benjamin/CLionProjects/Robot/main.cpp" "CMakeFiles/Robot.dir/main.cpp.o" "gcc" "CMakeFiles/Robot.dir/main.cpp.o.d"
+  "/home/benjamin/CLionProjects/Robot/src/Display.cpp" "CMakeFiles/Robot.dir/src/Display.cpp.o" "gcc" "CMakeFiles/Robot.dir/src/Display.cpp.o.d"
+  "/home/benjamin/CLionProjects/Robot/src/Exception.cpp" "CMakeFiles/Robot.dir/src/Exception.cpp.o" "gcc" "CMakeFiles/Robot.dir/src/Exception.cpp.o.d"
+  "/home/benjamin/CLionProjects/Robot/src/Factory.cpp" "CMakeFiles/Robot.dir/src/Factory.cpp.o" "gcc" "CMakeFiles/Robot.dir/src/Factory.cpp.o.d"
+  "/home/benjamin/CLionProjects/Robot/src/Robot.cpp" "CMakeFiles/Robot.dir/src/Robot.cpp.o" "gcc" "CMakeFiles/Robot.dir/src/Robot.cpp.o.d"
+  "/home/benjamin/CLionProjects/Robot/src/World.cpp" "CMakeFiles/Robot.dir/src/World.cpp.o" "gcc" "CMakeFiles/Robot.dir/src/World.cpp.o.d"
+  "/home/benjamin/CLionProjects/Robot/src/graph/Edge.cpp" "CMakeFiles/Robot.dir/src/graph/Edge.cpp.o" "gcc" "CMakeFiles/Robot.dir/src/graph/Edge.cpp.o.d"
+  "/home/benjamin/CLionProjects/Robot/src/graph/Graph.cpp" "CMakeFiles/Robot.dir/src/graph/Graph.cpp.o" "gcc" "CMakeFiles/Robot.dir/src/graph/Graph.cpp.o.d"
+  "/home/benjamin/CLionProjects/Robot/src/graph/Vertex.cpp" "CMakeFiles/Robot.dir/src/graph/Vertex.cpp.o" "gcc" "CMakeFiles/Robot.dir/src/graph/Vertex.cpp.o.d"
   )
 
 # Targets to which this target links.

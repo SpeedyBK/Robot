@@ -75,7 +75,7 @@ namespace RobbyTheRobot {
         return os;
     }
 
-    Edge &Graph::create_edge(pair<Vertex*, Vertex*> vsd, int distance) {
+    Edge &Graph::create_edge(set<Vertex*> vsd, int distance) {
         Edge *e = new Edge(vsd, distance, (int)edges.size() + 1);
 
         for (auto &it : Edges() ) {
