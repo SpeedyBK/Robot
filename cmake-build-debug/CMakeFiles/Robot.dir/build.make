@@ -145,13 +145,73 @@ CMakeFiles/Robot.dir/src/Robot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Robot.dir/src/Robot.cpp.s"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Benja\CLionProjects\Robot\src\Robot.cpp -o CMakeFiles\Robot.dir\src\Robot.cpp.s
 
+CMakeFiles/Robot.dir/src/graph/Graph.cpp.obj: CMakeFiles/Robot.dir/flags.make
+CMakeFiles/Robot.dir/src/graph/Graph.cpp.obj: CMakeFiles/Robot.dir/includes_CXX.rsp
+CMakeFiles/Robot.dir/src/graph/Graph.cpp.obj: ../src/graph/Graph.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Benja\CLionProjects\Robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Robot.dir/src/graph/Graph.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Robot.dir\src\graph\Graph.cpp.obj -c C:\Users\Benja\CLionProjects\Robot\src\graph\Graph.cpp
+
+CMakeFiles/Robot.dir/src/graph/Graph.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Robot.dir/src/graph/Graph.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Benja\CLionProjects\Robot\src\graph\Graph.cpp > CMakeFiles\Robot.dir\src\graph\Graph.cpp.i
+
+CMakeFiles/Robot.dir/src/graph/Graph.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Robot.dir/src/graph/Graph.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Benja\CLionProjects\Robot\src\graph\Graph.cpp -o CMakeFiles\Robot.dir\src\graph\Graph.cpp.s
+
+CMakeFiles/Robot.dir/src/graph/Vertex.cpp.obj: CMakeFiles/Robot.dir/flags.make
+CMakeFiles/Robot.dir/src/graph/Vertex.cpp.obj: CMakeFiles/Robot.dir/includes_CXX.rsp
+CMakeFiles/Robot.dir/src/graph/Vertex.cpp.obj: ../src/graph/Vertex.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Benja\CLionProjects\Robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Robot.dir/src/graph/Vertex.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Robot.dir\src\graph\Vertex.cpp.obj -c C:\Users\Benja\CLionProjects\Robot\src\graph\Vertex.cpp
+
+CMakeFiles/Robot.dir/src/graph/Vertex.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Robot.dir/src/graph/Vertex.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Benja\CLionProjects\Robot\src\graph\Vertex.cpp > CMakeFiles\Robot.dir\src\graph\Vertex.cpp.i
+
+CMakeFiles/Robot.dir/src/graph/Vertex.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Robot.dir/src/graph/Vertex.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Benja\CLionProjects\Robot\src\graph\Vertex.cpp -o CMakeFiles\Robot.dir\src\graph\Vertex.cpp.s
+
+CMakeFiles/Robot.dir/src/graph/Edge.cpp.obj: CMakeFiles/Robot.dir/flags.make
+CMakeFiles/Robot.dir/src/graph/Edge.cpp.obj: CMakeFiles/Robot.dir/includes_CXX.rsp
+CMakeFiles/Robot.dir/src/graph/Edge.cpp.obj: ../src/graph/Edge.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Benja\CLionProjects\Robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Robot.dir/src/graph/Edge.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Robot.dir\src\graph\Edge.cpp.obj -c C:\Users\Benja\CLionProjects\Robot\src\graph\Edge.cpp
+
+CMakeFiles/Robot.dir/src/graph/Edge.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Robot.dir/src/graph/Edge.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Benja\CLionProjects\Robot\src\graph\Edge.cpp > CMakeFiles\Robot.dir\src\graph\Edge.cpp.i
+
+CMakeFiles/Robot.dir/src/graph/Edge.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Robot.dir/src/graph/Edge.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Benja\CLionProjects\Robot\src\graph\Edge.cpp -o CMakeFiles\Robot.dir\src\graph\Edge.cpp.s
+
+CMakeFiles/Robot.dir/src/Exception.cpp.obj: CMakeFiles/Robot.dir/flags.make
+CMakeFiles/Robot.dir/src/Exception.cpp.obj: CMakeFiles/Robot.dir/includes_CXX.rsp
+CMakeFiles/Robot.dir/src/Exception.cpp.obj: ../src/Exception.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Benja\CLionProjects\Robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Robot.dir/src/Exception.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Robot.dir\src\Exception.cpp.obj -c C:\Users\Benja\CLionProjects\Robot\src\Exception.cpp
+
+CMakeFiles/Robot.dir/src/Exception.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Robot.dir/src/Exception.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Benja\CLionProjects\Robot\src\Exception.cpp > CMakeFiles\Robot.dir\src\Exception.cpp.i
+
+CMakeFiles/Robot.dir/src/Exception.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Robot.dir/src/Exception.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Benja\CLionProjects\Robot\src\Exception.cpp -o CMakeFiles\Robot.dir\src\Exception.cpp.s
+
 # Object files for target Robot
 Robot_OBJECTS = \
 "CMakeFiles/Robot.dir/main.cpp.obj" \
 "CMakeFiles/Robot.dir/src/World.cpp.obj" \
 "CMakeFiles/Robot.dir/src/Display.cpp.obj" \
 "CMakeFiles/Robot.dir/src/Factory.cpp.obj" \
-"CMakeFiles/Robot.dir/src/Robot.cpp.obj"
+"CMakeFiles/Robot.dir/src/Robot.cpp.obj" \
+"CMakeFiles/Robot.dir/src/graph/Graph.cpp.obj" \
+"CMakeFiles/Robot.dir/src/graph/Vertex.cpp.obj" \
+"CMakeFiles/Robot.dir/src/graph/Edge.cpp.obj" \
+"CMakeFiles/Robot.dir/src/Exception.cpp.obj"
 
 # External object files for target Robot
 Robot_EXTERNAL_OBJECTS =
@@ -161,6 +221,10 @@ Robot.exe: CMakeFiles/Robot.dir/src/World.cpp.obj
 Robot.exe: CMakeFiles/Robot.dir/src/Display.cpp.obj
 Robot.exe: CMakeFiles/Robot.dir/src/Factory.cpp.obj
 Robot.exe: CMakeFiles/Robot.dir/src/Robot.cpp.obj
+Robot.exe: CMakeFiles/Robot.dir/src/graph/Graph.cpp.obj
+Robot.exe: CMakeFiles/Robot.dir/src/graph/Vertex.cpp.obj
+Robot.exe: CMakeFiles/Robot.dir/src/graph/Edge.cpp.obj
+Robot.exe: CMakeFiles/Robot.dir/src/Exception.cpp.obj
 Robot.exe: CMakeFiles/Robot.dir/build.make
 Robot.exe: C:/Users/Benja/CLionProjects/SFML_Install/lib/libsfml-graphics-d.a
 Robot.exe: C:/Users/Benja/CLionProjects/SFML_Install/lib/libsfml-audio-d.a
@@ -169,7 +233,7 @@ Robot.exe: C:/Users/Benja/CLionProjects/SFML_Install/lib/libsfml-system-d.a
 Robot.exe: CMakeFiles/Robot.dir/linklibs.rsp
 Robot.exe: CMakeFiles/Robot.dir/objects1.rsp
 Robot.exe: CMakeFiles/Robot.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Benja\CLionProjects\Robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Robot.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Benja\CLionProjects\Robot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Robot.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Robot.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

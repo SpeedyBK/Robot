@@ -15,6 +15,14 @@ add_executable(Robot main.cpp
                src/Factory.cpp
                src/Factory.h
                src/Robot.cpp
-               src/Robot.h)
+               src/Robot.h
+               src/graph/Graph.cpp
+               src/graph/Graph.h
+               src/graph/Vertex.cpp
+               src/graph/Vertex.h
+               src/graph/Edge.cpp
+               src/graph/Edge.h
+               src/Exception.cpp
+               src/Exception.h)
 
 target_link_libraries(Robot sfml-graphics sfml-audio)

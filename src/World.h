@@ -49,6 +49,8 @@ public:
 
     std::pair<int, int> get_factory_position();
 
+    std::vector<std::vector<int>> &get_material_map() { return this->field_materials; }
+
 private:
 
     void travel_to_field(int x, int y);

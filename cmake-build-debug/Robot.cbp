@@ -91,6 +91,12 @@
 		<Unit filename="C:/Users/Benja/CLionProjects/Robot/src/Display.h">
 			<Option target="Robot"/>
 		</Unit>
+		<Unit filename="C:/Users/Benja/CLionProjects/Robot/src/Exception.cpp">
+			<Option target="Robot"/>
+		</Unit>
+		<Unit filename="C:/Users/Benja/CLionProjects/Robot/src/Exception.h">
+			<Option target="Robot"/>
+		</Unit>
 		<Unit filename="C:/Users/Benja/CLionProjects/Robot/src/Factory.cpp">
 			<Option target="Robot"/>
 		</Unit>
@@ -107,6 +113,24 @@
 			<Option target="Robot"/>
 		</Unit>
 		<Unit filename="C:/Users/Benja/CLionProjects/Robot/src/World.h">
+			<Option target="Robot"/>
+		</Unit>
+		<Unit filename="C:/Users/Benja/CLionProjects/Robot/src/graph/Edge.cpp">
+			<Option target="Robot"/>
+		</Unit>
+		<Unit filename="C:/Users/Benja/CLionProjects/Robot/src/graph/Edge.h">
+			<Option target="Robot"/>
+		</Unit>
+		<Unit filename="C:/Users/Benja/CLionProjects/Robot/src/graph/Graph.cpp">
+			<Option target="Robot"/>
+		</Unit>
+		<Unit filename="C:/Users/Benja/CLionProjects/Robot/src/graph/Graph.h">
+			<Option target="Robot"/>
+		</Unit>
+		<Unit filename="C:/Users/Benja/CLionProjects/Robot/src/graph/Vertex.cpp">
+			<Option target="Robot"/>
+		</Unit>
+		<Unit filename="C:/Users/Benja/CLionProjects/Robot/src/graph/Vertex.h">
 			<Option target="Robot"/>
 		</Unit>
 		<Unit filename="C:/Users/Benja/CLionProjects/Robot/CMakeLists.txt">
