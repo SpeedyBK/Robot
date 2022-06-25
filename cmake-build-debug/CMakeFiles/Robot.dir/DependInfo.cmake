@@ -18,6 +18,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../SFML_INCLUDE_DIR"
   "C:/Users/Benja/CLionProjects/SFML_Install/include"
   )
 

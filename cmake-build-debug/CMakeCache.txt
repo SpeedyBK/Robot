@@ -251,7 +251,7 @@ Robot_BINARY_DIR:STATIC=C:/Users/Benja/CLionProjects/Robot/cmake-build-debug
 Robot_SOURCE_DIR:STATIC=C:/Users/Benja/CLionProjects/Robot
 
 //The directory containing a CMake configuration file for SFML.
-SFML_DIR:PATH=SFML_DIR-NOTFOUND
+SFML_DIR:PATH=C:/Users/Benja/CLionProjects/SFML_Install/lib/cmake/SFML
 
 //Path to a file.
 SFML_DOC_DIR:PATH=SFML_DOC_DIR-NOTFOUND

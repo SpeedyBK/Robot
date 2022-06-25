@@ -1,7 +1,7 @@
 #include <iostream>
-#include "src\World.h"
-#include "src\Display.h"
-#include "src\graph\Graph.h"
+#include "src/World.h"
+#include "src/Display.h"
+#include "src/graph/Graph.h"
 
 using namespace RobbyTheRobot;
 
