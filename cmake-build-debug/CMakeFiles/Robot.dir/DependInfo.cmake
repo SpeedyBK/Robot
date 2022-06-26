@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Benja/CLionProjects/Robot/main.cpp" "C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/CMakeFiles/Robot.dir/main.cpp.obj"
+  "C:/Users/Benja/CLionProjects/Robot/src/Algorithms/AStar.cpp" "C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.obj"
   "C:/Users/Benja/CLionProjects/Robot/src/Display.cpp" "C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/CMakeFiles/Robot.dir/src/Display.cpp.obj"
   "C:/Users/Benja/CLionProjects/Robot/src/Exception.cpp" "C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/CMakeFiles/Robot.dir/src/Exception.cpp.obj"
   "C:/Users/Benja/CLionProjects/Robot/src/Factory.cpp" "C:/Users/Benja/CLionProjects/Robot/cmake-build-debug/CMakeFiles/Robot.dir/src/Factory.cpp.obj"
@@ -18,7 +19,6 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../SFML_INCLUDE_DIR"
   "C:/Users/Benja/CLionProjects/SFML_Install/include"
   )
 

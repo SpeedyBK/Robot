@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Robot.dir/main.cpp.obj"
+  "CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.obj"
   "CMakeFiles/Robot.dir/src/Display.cpp.obj"
   "CMakeFiles/Robot.dir/src/Exception.cpp.obj"
   "CMakeFiles/Robot.dir/src/Factory.cpp.obj"

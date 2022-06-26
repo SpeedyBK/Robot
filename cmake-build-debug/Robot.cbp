@@ -24,7 +24,6 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/Benja/CLionProjects/Robot/SFML_INCLUDE_DIR"/>
 					<Add directory="C:/Users/Benja/CLionProjects/SFML_Install/include"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
@@ -47,7 +46,6 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/Benja/CLionProjects/Robot/SFML_INCLUDE_DIR"/>
 					<Add directory="C:/Users/Benja/CLionProjects/SFML_Install/include"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
 					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
@@ -85,6 +83,12 @@
 			</Target>
 		</Build>
 		<Unit filename="C:/Users/Benja/CLionProjects/Robot/main.cpp">
+			<Option target="Robot"/>
+		</Unit>
+		<Unit filename="C:/Users/Benja/CLionProjects/Robot/src/Algorithms/AStar.cpp">
+			<Option target="Robot"/>
+		</Unit>
+		<Unit filename="C:/Users/Benja/CLionProjects/Robot/src/Algorithms/AStar.h">
 			<Option target="Robot"/>
 		</Unit>
 		<Unit filename="C:/Users/Benja/CLionProjects/Robot/src/Display.cpp">

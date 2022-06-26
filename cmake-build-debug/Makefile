@@ -168,6 +168,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Robot.dir\build.make CMakeFiles/Robot.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/Algorithms/AStar.obj: src/Algorithms/AStar.cpp.obj
+
+.PHONY : src/Algorithms/AStar.obj
+
+# target to build an object file
+src/Algorithms/AStar.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Robot.dir\build.make CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.obj
+.PHONY : src/Algorithms/AStar.cpp.obj
+
+src/Algorithms/AStar.i: src/Algorithms/AStar.cpp.i
+
+.PHONY : src/Algorithms/AStar.i
+
+# target to preprocess a source file
+src/Algorithms/AStar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Robot.dir\build.make CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.i
+.PHONY : src/Algorithms/AStar.cpp.i
+
+src/Algorithms/AStar.s: src/Algorithms/AStar.cpp.s
+
+.PHONY : src/Algorithms/AStar.s
+
+# target to generate assembly for a file
+src/Algorithms/AStar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Robot.dir\build.make CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.s
+.PHONY : src/Algorithms/AStar.cpp.s
+
 src/Display.obj: src/Display.cpp.obj
 
 .PHONY : src/Display.obj
@@ -396,6 +423,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/Algorithms/AStar.obj
+	@echo ... src/Algorithms/AStar.i
+	@echo ... src/Algorithms/AStar.s
 	@echo ... src/Display.obj
 	@echo ... src/Display.i
 	@echo ... src/Display.s
