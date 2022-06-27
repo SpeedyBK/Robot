@@ -84,6 +84,12 @@ CMakeFiles/Robot.dir/main.cpp.obj: C:/Users/Benja/CLionProjects/SFML_Install/inc
 CMakeFiles/Robot.dir/main.cpp.obj: C:/Users/Benja/CLionProjects/SFML_Install/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/Robot.dir/main.cpp.obj: C:/Users/Benja/CLionProjects/SFML_Install/include/SFML/Window/WindowStyle.hpp
 
+CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.obj: ../src/Algorithms/AStar.cpp
+CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.obj: ../src/Algorithms/AStar.h
+CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.obj: ../src/Factory.h
+CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.obj: ../src/Robot.h
+CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.obj: ../src/World.h
+
 CMakeFiles/Robot.dir/src/Display.cpp.obj: ../src/Display.cpp
 CMakeFiles/Robot.dir/src/Display.cpp.obj: ../src/Display.h
 CMakeFiles/Robot.dir/src/Display.cpp.obj: ../src/Factory.h
