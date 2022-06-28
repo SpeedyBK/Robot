@@ -25,6 +25,8 @@ namespace RobbyTheRobot {
 
         int get_minerals() const { return this->amount_of_minerals; }
 
+        pair<int, int> get_position() { return this->position; };
+
         void set_position(pair<int, int> postion) { this->position = postion; }
 
         void set_minerals(int minerals) { this->amount_of_minerals = minerals; }

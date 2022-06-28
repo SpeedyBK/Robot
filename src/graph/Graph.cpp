@@ -91,11 +91,17 @@ namespace RobbyTheRobot {
     }
 
     void Graph::create_complete_graph_test() {
-        for (int i = 1; i < max_vertex_id; i++){
-            for (int j = i + 1; j < max_vertex_id; j++){
+        for (int i = 1; i <= max_vertex_id; i++){
+            for (int j = i + 1; j <= max_vertex_id; j++){
                 create_edge({get_vertex_by_id(i), get_vertex_by_id(j)}, 42);
             }
         }
+    }
+
+    void Graph::create_factory_vertex(int x, int y) {
+        Vertex &v = create_vertex();
+        v.set_position(std::make_pair(x, y));
+        v.set_minerals(0);
     }
 }
 

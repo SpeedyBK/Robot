@@ -235,6 +235,9 @@ Robot_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 Robot_SOURCE_DIR:STATIC=/home/benjamin/CLionProjects/Robot
 
+//The directory containing a CMake configuration file for SFML.
+SFML_DIR:PATH=SFML_DIR-NOTFOUND
+
 //Path to a file.
 SFML_DOC_DIR:PATH=SFML_DOC_DIR-NOTFOUND
 

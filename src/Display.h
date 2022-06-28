@@ -6,34 +6,51 @@
 #define ROBOT_DISPLAY_H
 
 #include <SFML/Graphics.hpp>
+#include <vector>
 #include "World.h"
+#include "graph/Graph.h"
 
-class Display {
+using namespace std;
 
-public:
+namespace RobbyTheRobot {
 
-    explicit Display(World* w);
+    class Display {
 
-    void draw();
+    public:
 
-private:
+        Display(World *w, Graph* G);
 
-    void draw_times(sf::RenderWindow* win_ptr);
+        ~Display() { delete this->window_ptr; }
 
-    void draw_minerals(sf::RenderWindow* win_ptr);
+        void draw();
 
-    void draw_robot(sf::RenderWindow* win_ptr);
+        void calc_line(vector<int> &start_end);
 
-    void draw_factory(sf::RenderWindow* win_ptr);
+    private:
 
-    World* W;
+        void draw_times();
 
-    int width;
-    int heigt;
+        void draw_minerals();
 
-    int scaling_factor;
+        void draw_robot();
 
-};
+        void draw_factory();
 
+        void draw_line(int start_x, int start_y, int end_x, int end_y);
+
+        World *W;
+
+        Graph *G;
+
+        sf::RenderWindow *window_ptr;
+
+        int width;
+        int heigt;
+
+        int scaling_factor;
+
+    };
+
+}
 
 #endif //ROBOT_DISPLAY_H

@@ -33,6 +33,8 @@ namespace RobbyTheRobot {
 
         void create_vertices_from_map(vector<vector<int>>&world_map);
 
+        void create_factory_vertex(int x, int y);
+
         void create_complete_graph_test();
 
         friend ostream& operator<<(ostream& os, const Graph& g);

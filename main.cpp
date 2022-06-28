@@ -19,6 +19,7 @@ int main() {
     Graph g;
 
     g.create_vertices_from_map(w.get_material_map());
+    g.create_factory_vertex(w.get_factory_position().first, w.get_factory_position().second);
 
     g.create_complete_graph_test();
 
@@ -26,7 +27,7 @@ int main() {
 
     std::cout << "Total Materials: " << w.get_total_materials() << std::endl;
 
-    Display D(&w);
+    Display D(&w, &g);
 
     D.draw();
 
