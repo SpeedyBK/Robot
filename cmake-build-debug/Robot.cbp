@@ -89,6 +89,18 @@
 		<Unit filename="/home/benjamin/CLionProjects/Robot/main.cpp">
 			<Option target="Robot"/>
 		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/Robot/src/Algorithms/AStar.cpp">
+			<Option target="Robot"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/Robot/src/Algorithms/AStar.h">
+			<Option target="Robot"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/Robot/src/Algorithms/Node.cpp">
+			<Option target="Robot"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/Robot/src/Algorithms/Node.h">
+			<Option target="Robot"/>
+		</Unit>
 		<Unit filename="/home/benjamin/CLionProjects/Robot/src/Display.cpp">
 			<Option target="Robot"/>
 		</Unit>

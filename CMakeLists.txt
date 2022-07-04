@@ -34,6 +34,10 @@ add_executable(Robot main.cpp
                src/graph/Edge.cpp
                src/graph/Edge.h
                src/Exception.cpp
-               src/Exception.h)
+               src/Exception.h
+               src/Algorithms/AStar.cpp
+               src/Algorithms/AStar.h
+               src/Algorithms/Node.cpp
+               src/Algorithms/Node.h)
 
 target_link_libraries(Robot sfml-graphics sfml-audio)

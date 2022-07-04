@@ -153,6 +153,54 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/Algorithms/AStar.o: src/Algorithms/AStar.cpp.o
+.PHONY : src/Algorithms/AStar.o
+
+# target to build an object file
+src/Algorithms/AStar.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.o
+.PHONY : src/Algorithms/AStar.cpp.o
+
+src/Algorithms/AStar.i: src/Algorithms/AStar.cpp.i
+.PHONY : src/Algorithms/AStar.i
+
+# target to preprocess a source file
+src/Algorithms/AStar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.i
+.PHONY : src/Algorithms/AStar.cpp.i
+
+src/Algorithms/AStar.s: src/Algorithms/AStar.cpp.s
+.PHONY : src/Algorithms/AStar.s
+
+# target to generate assembly for a file
+src/Algorithms/AStar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.s
+.PHONY : src/Algorithms/AStar.cpp.s
+
+src/Algorithms/Node.o: src/Algorithms/Node.cpp.o
+.PHONY : src/Algorithms/Node.o
+
+# target to build an object file
+src/Algorithms/Node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/src/Algorithms/Node.cpp.o
+.PHONY : src/Algorithms/Node.cpp.o
+
+src/Algorithms/Node.i: src/Algorithms/Node.cpp.i
+.PHONY : src/Algorithms/Node.i
+
+# target to preprocess a source file
+src/Algorithms/Node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/src/Algorithms/Node.cpp.i
+.PHONY : src/Algorithms/Node.cpp.i
+
+src/Algorithms/Node.s: src/Algorithms/Node.cpp.s
+.PHONY : src/Algorithms/Node.s
+
+# target to generate assembly for a file
+src/Algorithms/Node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/src/Algorithms/Node.cpp.s
+.PHONY : src/Algorithms/Node.cpp.s
+
 src/Display.o: src/Display.cpp.o
 .PHONY : src/Display.o
 
@@ -357,6 +405,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/Algorithms/AStar.o"
+	@echo "... src/Algorithms/AStar.i"
+	@echo "... src/Algorithms/AStar.s"
+	@echo "... src/Algorithms/Node.o"
+	@echo "... src/Algorithms/Node.i"
+	@echo "... src/Algorithms/Node.s"
 	@echo "... src/Display.o"
 	@echo "... src/Display.i"
 	@echo "... src/Display.s"

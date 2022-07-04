@@ -9,6 +9,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/benjamin/CLionProjects/Robot/main.cpp" "CMakeFiles/Robot.dir/main.cpp.o" "gcc" "CMakeFiles/Robot.dir/main.cpp.o.d"
+  "/home/benjamin/CLionProjects/Robot/src/Algorithms/AStar.cpp" "CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.o" "gcc" "CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.o.d"
+  "/home/benjamin/CLionProjects/Robot/src/Algorithms/Node.cpp" "CMakeFiles/Robot.dir/src/Algorithms/Node.cpp.o" "gcc" "CMakeFiles/Robot.dir/src/Algorithms/Node.cpp.o.d"
   "/home/benjamin/CLionProjects/Robot/src/Display.cpp" "CMakeFiles/Robot.dir/src/Display.cpp.o" "gcc" "CMakeFiles/Robot.dir/src/Display.cpp.o.d"
   "/home/benjamin/CLionProjects/Robot/src/Exception.cpp" "CMakeFiles/Robot.dir/src/Exception.cpp.o" "gcc" "CMakeFiles/Robot.dir/src/Exception.cpp.o.d"
   "/home/benjamin/CLionProjects/Robot/src/Factory.cpp" "CMakeFiles/Robot.dir/src/Factory.cpp.o" "gcc" "CMakeFiles/Robot.dir/src/Factory.cpp.o.d"
