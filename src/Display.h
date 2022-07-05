@@ -8,6 +8,7 @@
 #include <SFML/Graphics.hpp>
 #include <vector>
 #include "World.h"
+#include "WorldUtils/Vector2i.h"
 #include "graph/Graph.h"
 
 using namespace std;
@@ -18,13 +19,17 @@ namespace RobbyTheRobot {
 
     public:
 
-        Display(World *w, Graph* G);
+        Display();
 
         ~Display() { delete this->window_ptr; }
 
         void draw();
 
         void calc_line(vector<int> &start_end);
+
+        sf::RenderWindow* getWindowPtr() const;
+
+        void drawVisitedFields(sf::RenderWindow* win_ptr, Vector2i fieldVector);
 
     private:
 
@@ -36,11 +41,11 @@ namespace RobbyTheRobot {
 
         void draw_factory();
 
-        void draw_line(int start_x, int start_y, int end_x, int end_y);
+        void draw_line(Vector2i start, Vector2i end);
 
-        World *W;
+        shared_ptr<World> W;
 
-        Graph *G;
+        shared_ptr<Graph> G;
 
         sf::RenderWindow *window_ptr;
 

@@ -153,54 +153,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src/Algorithms/AStar.o: src/Algorithms/AStar.cpp.o
-.PHONY : src/Algorithms/AStar.o
-
-# target to build an object file
-src/Algorithms/AStar.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.o
-.PHONY : src/Algorithms/AStar.cpp.o
-
-src/Algorithms/AStar.i: src/Algorithms/AStar.cpp.i
-.PHONY : src/Algorithms/AStar.i
-
-# target to preprocess a source file
-src/Algorithms/AStar.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.i
-.PHONY : src/Algorithms/AStar.cpp.i
-
-src/Algorithms/AStar.s: src/Algorithms/AStar.cpp.s
-.PHONY : src/Algorithms/AStar.s
-
-# target to generate assembly for a file
-src/Algorithms/AStar.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.s
-.PHONY : src/Algorithms/AStar.cpp.s
-
-src/Algorithms/Node.o: src/Algorithms/Node.cpp.o
-.PHONY : src/Algorithms/Node.o
-
-# target to build an object file
-src/Algorithms/Node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/src/Algorithms/Node.cpp.o
-.PHONY : src/Algorithms/Node.cpp.o
-
-src/Algorithms/Node.i: src/Algorithms/Node.cpp.i
-.PHONY : src/Algorithms/Node.i
-
-# target to preprocess a source file
-src/Algorithms/Node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/src/Algorithms/Node.cpp.i
-.PHONY : src/Algorithms/Node.cpp.i
-
-src/Algorithms/Node.s: src/Algorithms/Node.cpp.s
-.PHONY : src/Algorithms/Node.s
-
-# target to generate assembly for a file
-src/Algorithms/Node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/src/Algorithms/Node.cpp.s
-.PHONY : src/Algorithms/Node.cpp.s
-
 src/Display.o: src/Display.cpp.o
 .PHONY : src/Display.o
 
@@ -321,6 +273,78 @@ src/World.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/src/World.cpp.s
 .PHONY : src/World.cpp.s
 
+src/WorldUtils/AStarNode.o: src/WorldUtils/AStarNode.cpp.o
+.PHONY : src/WorldUtils/AStarNode.o
+
+# target to build an object file
+src/WorldUtils/AStarNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/src/WorldUtils/AStarNode.cpp.o
+.PHONY : src/WorldUtils/AStarNode.cpp.o
+
+src/WorldUtils/AStarNode.i: src/WorldUtils/AStarNode.cpp.i
+.PHONY : src/WorldUtils/AStarNode.i
+
+# target to preprocess a source file
+src/WorldUtils/AStarNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/src/WorldUtils/AStarNode.cpp.i
+.PHONY : src/WorldUtils/AStarNode.cpp.i
+
+src/WorldUtils/AStarNode.s: src/WorldUtils/AStarNode.cpp.s
+.PHONY : src/WorldUtils/AStarNode.s
+
+# target to generate assembly for a file
+src/WorldUtils/AStarNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/src/WorldUtils/AStarNode.cpp.s
+.PHONY : src/WorldUtils/AStarNode.cpp.s
+
+src/WorldUtils/AStarSearch.o: src/WorldUtils/AStarSearch.cpp.o
+.PHONY : src/WorldUtils/AStarSearch.o
+
+# target to build an object file
+src/WorldUtils/AStarSearch.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/src/WorldUtils/AStarSearch.cpp.o
+.PHONY : src/WorldUtils/AStarSearch.cpp.o
+
+src/WorldUtils/AStarSearch.i: src/WorldUtils/AStarSearch.cpp.i
+.PHONY : src/WorldUtils/AStarSearch.i
+
+# target to preprocess a source file
+src/WorldUtils/AStarSearch.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/src/WorldUtils/AStarSearch.cpp.i
+.PHONY : src/WorldUtils/AStarSearch.cpp.i
+
+src/WorldUtils/AStarSearch.s: src/WorldUtils/AStarSearch.cpp.s
+.PHONY : src/WorldUtils/AStarSearch.s
+
+# target to generate assembly for a file
+src/WorldUtils/AStarSearch.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/src/WorldUtils/AStarSearch.cpp.s
+.PHONY : src/WorldUtils/AStarSearch.cpp.s
+
+src/WorldUtils/Vector2i.o: src/WorldUtils/Vector2i.cpp.o
+.PHONY : src/WorldUtils/Vector2i.o
+
+# target to build an object file
+src/WorldUtils/Vector2i.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/src/WorldUtils/Vector2i.cpp.o
+.PHONY : src/WorldUtils/Vector2i.cpp.o
+
+src/WorldUtils/Vector2i.i: src/WorldUtils/Vector2i.cpp.i
+.PHONY : src/WorldUtils/Vector2i.i
+
+# target to preprocess a source file
+src/WorldUtils/Vector2i.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/src/WorldUtils/Vector2i.cpp.i
+.PHONY : src/WorldUtils/Vector2i.cpp.i
+
+src/WorldUtils/Vector2i.s: src/WorldUtils/Vector2i.cpp.s
+.PHONY : src/WorldUtils/Vector2i.s
+
+# target to generate assembly for a file
+src/WorldUtils/Vector2i.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/src/WorldUtils/Vector2i.cpp.s
+.PHONY : src/WorldUtils/Vector2i.cpp.s
+
 src/graph/Edge.o: src/graph/Edge.cpp.o
 .PHONY : src/graph/Edge.o
 
@@ -405,12 +429,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/Algorithms/AStar.o"
-	@echo "... src/Algorithms/AStar.i"
-	@echo "... src/Algorithms/AStar.s"
-	@echo "... src/Algorithms/Node.o"
-	@echo "... src/Algorithms/Node.i"
-	@echo "... src/Algorithms/Node.s"
 	@echo "... src/Display.o"
 	@echo "... src/Display.i"
 	@echo "... src/Display.s"
@@ -426,6 +444,15 @@ help:
 	@echo "... src/World.o"
 	@echo "... src/World.i"
 	@echo "... src/World.s"
+	@echo "... src/WorldUtils/AStarNode.o"
+	@echo "... src/WorldUtils/AStarNode.i"
+	@echo "... src/WorldUtils/AStarNode.s"
+	@echo "... src/WorldUtils/AStarSearch.o"
+	@echo "... src/WorldUtils/AStarSearch.i"
+	@echo "... src/WorldUtils/AStarSearch.s"
+	@echo "... src/WorldUtils/Vector2i.o"
+	@echo "... src/WorldUtils/Vector2i.i"
+	@echo "... src/WorldUtils/Vector2i.s"
 	@echo "... src/graph/Edge.o"
 	@echo "... src/graph/Edge.i"
 	@echo "... src/graph/Edge.s"

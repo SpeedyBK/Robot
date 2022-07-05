@@ -195,33 +195,47 @@ CMakeFiles/Robot.dir/src/Exception.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Robot.dir/src/Exception.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benjamin/CLionProjects/Robot/src/Exception.cpp -o CMakeFiles/Robot.dir/src/Exception.cpp.s
 
-CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.o: CMakeFiles/Robot.dir/flags.make
-CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.o: ../src/Algorithms/AStar.cpp
-CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.o: CMakeFiles/Robot.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benjamin/CLionProjects/Robot/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.o -MF CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.o.d -o CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.o -c /home/benjamin/CLionProjects/Robot/src/Algorithms/AStar.cpp
+CMakeFiles/Robot.dir/src/WorldUtils/Vector2i.cpp.o: CMakeFiles/Robot.dir/flags.make
+CMakeFiles/Robot.dir/src/WorldUtils/Vector2i.cpp.o: ../src/WorldUtils/Vector2i.cpp
+CMakeFiles/Robot.dir/src/WorldUtils/Vector2i.cpp.o: CMakeFiles/Robot.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benjamin/CLionProjects/Robot/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Robot.dir/src/WorldUtils/Vector2i.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Robot.dir/src/WorldUtils/Vector2i.cpp.o -MF CMakeFiles/Robot.dir/src/WorldUtils/Vector2i.cpp.o.d -o CMakeFiles/Robot.dir/src/WorldUtils/Vector2i.cpp.o -c /home/benjamin/CLionProjects/Robot/src/WorldUtils/Vector2i.cpp
 
-CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benjamin/CLionProjects/Robot/src/Algorithms/AStar.cpp > CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.i
+CMakeFiles/Robot.dir/src/WorldUtils/Vector2i.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Robot.dir/src/WorldUtils/Vector2i.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benjamin/CLionProjects/Robot/src/WorldUtils/Vector2i.cpp > CMakeFiles/Robot.dir/src/WorldUtils/Vector2i.cpp.i
 
-CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benjamin/CLionProjects/Robot/src/Algorithms/AStar.cpp -o CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.s
+CMakeFiles/Robot.dir/src/WorldUtils/Vector2i.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Robot.dir/src/WorldUtils/Vector2i.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benjamin/CLionProjects/Robot/src/WorldUtils/Vector2i.cpp -o CMakeFiles/Robot.dir/src/WorldUtils/Vector2i.cpp.s
 
-CMakeFiles/Robot.dir/src/Algorithms/Node.cpp.o: CMakeFiles/Robot.dir/flags.make
-CMakeFiles/Robot.dir/src/Algorithms/Node.cpp.o: ../src/Algorithms/Node.cpp
-CMakeFiles/Robot.dir/src/Algorithms/Node.cpp.o: CMakeFiles/Robot.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benjamin/CLionProjects/Robot/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Robot.dir/src/Algorithms/Node.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Robot.dir/src/Algorithms/Node.cpp.o -MF CMakeFiles/Robot.dir/src/Algorithms/Node.cpp.o.d -o CMakeFiles/Robot.dir/src/Algorithms/Node.cpp.o -c /home/benjamin/CLionProjects/Robot/src/Algorithms/Node.cpp
+CMakeFiles/Robot.dir/src/WorldUtils/AStarNode.cpp.o: CMakeFiles/Robot.dir/flags.make
+CMakeFiles/Robot.dir/src/WorldUtils/AStarNode.cpp.o: ../src/WorldUtils/AStarNode.cpp
+CMakeFiles/Robot.dir/src/WorldUtils/AStarNode.cpp.o: CMakeFiles/Robot.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benjamin/CLionProjects/Robot/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Robot.dir/src/WorldUtils/AStarNode.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Robot.dir/src/WorldUtils/AStarNode.cpp.o -MF CMakeFiles/Robot.dir/src/WorldUtils/AStarNode.cpp.o.d -o CMakeFiles/Robot.dir/src/WorldUtils/AStarNode.cpp.o -c /home/benjamin/CLionProjects/Robot/src/WorldUtils/AStarNode.cpp
 
-CMakeFiles/Robot.dir/src/Algorithms/Node.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Robot.dir/src/Algorithms/Node.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benjamin/CLionProjects/Robot/src/Algorithms/Node.cpp > CMakeFiles/Robot.dir/src/Algorithms/Node.cpp.i
+CMakeFiles/Robot.dir/src/WorldUtils/AStarNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Robot.dir/src/WorldUtils/AStarNode.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benjamin/CLionProjects/Robot/src/WorldUtils/AStarNode.cpp > CMakeFiles/Robot.dir/src/WorldUtils/AStarNode.cpp.i
 
-CMakeFiles/Robot.dir/src/Algorithms/Node.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Robot.dir/src/Algorithms/Node.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benjamin/CLionProjects/Robot/src/Algorithms/Node.cpp -o CMakeFiles/Robot.dir/src/Algorithms/Node.cpp.s
+CMakeFiles/Robot.dir/src/WorldUtils/AStarNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Robot.dir/src/WorldUtils/AStarNode.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benjamin/CLionProjects/Robot/src/WorldUtils/AStarNode.cpp -o CMakeFiles/Robot.dir/src/WorldUtils/AStarNode.cpp.s
+
+CMakeFiles/Robot.dir/src/WorldUtils/AStarSearch.cpp.o: CMakeFiles/Robot.dir/flags.make
+CMakeFiles/Robot.dir/src/WorldUtils/AStarSearch.cpp.o: ../src/WorldUtils/AStarSearch.cpp
+CMakeFiles/Robot.dir/src/WorldUtils/AStarSearch.cpp.o: CMakeFiles/Robot.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benjamin/CLionProjects/Robot/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Robot.dir/src/WorldUtils/AStarSearch.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Robot.dir/src/WorldUtils/AStarSearch.cpp.o -MF CMakeFiles/Robot.dir/src/WorldUtils/AStarSearch.cpp.o.d -o CMakeFiles/Robot.dir/src/WorldUtils/AStarSearch.cpp.o -c /home/benjamin/CLionProjects/Robot/src/WorldUtils/AStarSearch.cpp
+
+CMakeFiles/Robot.dir/src/WorldUtils/AStarSearch.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Robot.dir/src/WorldUtils/AStarSearch.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benjamin/CLionProjects/Robot/src/WorldUtils/AStarSearch.cpp > CMakeFiles/Robot.dir/src/WorldUtils/AStarSearch.cpp.i
+
+CMakeFiles/Robot.dir/src/WorldUtils/AStarSearch.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Robot.dir/src/WorldUtils/AStarSearch.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benjamin/CLionProjects/Robot/src/WorldUtils/AStarSearch.cpp -o CMakeFiles/Robot.dir/src/WorldUtils/AStarSearch.cpp.s
 
 # Object files for target Robot
 Robot_OBJECTS = \
@@ -234,8 +248,9 @@ Robot_OBJECTS = \
 "CMakeFiles/Robot.dir/src/graph/Vertex.cpp.o" \
 "CMakeFiles/Robot.dir/src/graph/Edge.cpp.o" \
 "CMakeFiles/Robot.dir/src/Exception.cpp.o" \
-"CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.o" \
-"CMakeFiles/Robot.dir/src/Algorithms/Node.cpp.o"
+"CMakeFiles/Robot.dir/src/WorldUtils/Vector2i.cpp.o" \
+"CMakeFiles/Robot.dir/src/WorldUtils/AStarNode.cpp.o" \
+"CMakeFiles/Robot.dir/src/WorldUtils/AStarSearch.cpp.o"
 
 # External object files for target Robot
 Robot_EXTERNAL_OBJECTS =
@@ -249,15 +264,16 @@ Robot: CMakeFiles/Robot.dir/src/graph/Graph.cpp.o
 Robot: CMakeFiles/Robot.dir/src/graph/Vertex.cpp.o
 Robot: CMakeFiles/Robot.dir/src/graph/Edge.cpp.o
 Robot: CMakeFiles/Robot.dir/src/Exception.cpp.o
-Robot: CMakeFiles/Robot.dir/src/Algorithms/AStar.cpp.o
-Robot: CMakeFiles/Robot.dir/src/Algorithms/Node.cpp.o
+Robot: CMakeFiles/Robot.dir/src/WorldUtils/Vector2i.cpp.o
+Robot: CMakeFiles/Robot.dir/src/WorldUtils/AStarNode.cpp.o
+Robot: CMakeFiles/Robot.dir/src/WorldUtils/AStarSearch.cpp.o
 Robot: CMakeFiles/Robot.dir/build.make
 Robot: /home/benjamin/Dependencies/sfml/lib/libsfml-graphics.so.2.5.1
 Robot: /home/benjamin/Dependencies/sfml/lib/libsfml-audio.so.2.5.1
 Robot: /home/benjamin/Dependencies/sfml/lib/libsfml-window.so.2.5.1
 Robot: /home/benjamin/Dependencies/sfml/lib/libsfml-system.so.2.5.1
 Robot: CMakeFiles/Robot.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/benjamin/CLionProjects/Robot/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable Robot"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/benjamin/CLionProjects/Robot/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable Robot"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Robot.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

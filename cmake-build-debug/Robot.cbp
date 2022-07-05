@@ -89,18 +89,6 @@
 		<Unit filename="/home/benjamin/CLionProjects/Robot/main.cpp">
 			<Option target="Robot"/>
 		</Unit>
-		<Unit filename="/home/benjamin/CLionProjects/Robot/src/Algorithms/AStar.cpp">
-			<Option target="Robot"/>
-		</Unit>
-		<Unit filename="/home/benjamin/CLionProjects/Robot/src/Algorithms/AStar.h">
-			<Option target="Robot"/>
-		</Unit>
-		<Unit filename="/home/benjamin/CLionProjects/Robot/src/Algorithms/Node.cpp">
-			<Option target="Robot"/>
-		</Unit>
-		<Unit filename="/home/benjamin/CLionProjects/Robot/src/Algorithms/Node.h">
-			<Option target="Robot"/>
-		</Unit>
 		<Unit filename="/home/benjamin/CLionProjects/Robot/src/Display.cpp">
 			<Option target="Robot"/>
 		</Unit>
@@ -129,6 +117,24 @@
 			<Option target="Robot"/>
 		</Unit>
 		<Unit filename="/home/benjamin/CLionProjects/Robot/src/World.h">
+			<Option target="Robot"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/Robot/src/WorldUtils/AStarNode.cpp">
+			<Option target="Robot"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/Robot/src/WorldUtils/AStarNode.h">
+			<Option target="Robot"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/Robot/src/WorldUtils/AStarSearch.cpp">
+			<Option target="Robot"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/Robot/src/WorldUtils/AStarSearch.h">
+			<Option target="Robot"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/Robot/src/WorldUtils/Vector2i.cpp">
+			<Option target="Robot"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/Robot/src/WorldUtils/Vector2i.h">
 			<Option target="Robot"/>
 		</Unit>
 		<Unit filename="/home/benjamin/CLionProjects/Robot/src/graph/Edge.cpp">

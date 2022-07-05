@@ -17,8 +17,8 @@ Robot::~Robot() {
     std::cout << "Robot destroyed!" << std::endl;
 }
 
-std::pair<int, int> Robot::get_position() {
-    return std::make_pair(x, y);
+RobbyTheRobot::Vector2i Robot::get_position() const {
+    return {x, y};
 }
 
 bool Robot::move_left() {
@@ -64,7 +64,7 @@ void Robot::gather_materials() {
 
 void Robot::unload_materials() {
     auto F = w->get_factory_ptr();
-    if ( x == F->get_position().first && y == F->get_position().second){
+    if ( x == F->get_position().getX() && y == F->get_position().getY()){
         F->process(materials);
         materials = 0;
     }else{

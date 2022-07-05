@@ -5,22 +5,23 @@
 #include <iostream>
 #include <cmath>
 #include "Display.h"
+#include "WorldUtils/AStarSearch.h"
 
 using namespace std;
 
 namespace RobbyTheRobot {
 
-    Display::Display(World *w, Graph* g) {
+    Display::Display() {
 
         cout << "Drawing Class generated..." << endl;
 
-        this->W = w;
-        this->G = g;
+        this->W = std::make_shared<World>(15);
+        this->G = std::make_shared<Graph>();
 
         scaling_factor = 64;
 
-        width = w->get_n() * scaling_factor;
-        heigt = w->get_n() * scaling_factor;
+        width = W->get_n() * scaling_factor;
+        heigt = W->get_n() * scaling_factor;
 
         this->window_ptr = new sf::RenderWindow(sf::VideoMode(width, heigt), "Robot!");;
 
@@ -29,6 +30,8 @@ namespace RobbyTheRobot {
     void Display::draw() {
 
         cout << "Drawing" << endl;
+
+        AStarSearch aStar(this, {2, 2}, {4, 4});
 
         while (window_ptr->isOpen()) {
             sf::Event event;
@@ -42,15 +45,7 @@ namespace RobbyTheRobot {
             draw_minerals();
             draw_factory();
             draw_robot();
-            for (auto &e: G->Edges()) {
-                vector<int> lin;
-                for (auto &v: e->get_vertices_of_edge()) {
-                    lin.push_back(v->get_position().first);
-                    lin.push_back(v->get_position().second);
-                }
-                calc_line(lin);
-                lin.clear();
-            }
+            aStar.visitTest();
             window_ptr->display();
         }
 
@@ -90,33 +85,43 @@ namespace RobbyTheRobot {
         int shrink_value = 14;
         sf::CircleShape robbi((float) (scaling_factor - shrink_value) / 2);
         robbi.setFillColor(sf::Color::Cyan);
-        robbi.setPosition((float) W->get_robot_position().first * (float) scaling_factor + (float) shrink_value / 2,
-                          (float) W->get_robot_position().second * (float) scaling_factor + (float) shrink_value / 2);
+        robbi.setPosition((float) W->get_robot_position().getX() * (float) scaling_factor + (float) shrink_value / 2,
+                          (float) W->get_robot_position().getY() * (float) scaling_factor + (float) shrink_value / 2);
         window_ptr->draw(robbi);
     }
 
     void Display::draw_factory() {
         sf::CircleShape factory((float) scaling_factor / 2, 8);
         factory.setFillColor(sf::Color::Blue);
-        factory.setPosition((float) W->get_factory_position().first * (float) scaling_factor,
-                            (float) W->get_factory_position().second * (float) scaling_factor);
+        factory.setPosition((float) W->get_factory_position().getX() * (float) scaling_factor,
+                            (float) W->get_factory_position().getY() * (float) scaling_factor);
         window_ptr->draw(factory);
     }
 
-    void Display::draw_line(int start_x, int start_y, int end_x, int end_y) {
+    void Display::draw_line(Vector2i start, Vector2i end) {
         sf::Vertex l[] = {
-                sf::Vertex(sf::Vector2f((float) start_x, (float) start_y)),
-                sf::Vertex(sf::Vector2f((float) end_x, (float) end_y))
+                sf::Vertex(sf::Vector2f((float) start.getX(), (float) start.getY())),
+                sf::Vertex(sf::Vector2f((float) end.getX(), (float) end.getY()))
         };
         window_ptr->draw(l, 2, sf::Lines);
     }
 
     void Display::calc_line(vector<int> &start_end) {
-        int start_x = start_end.at(0) * scaling_factor + (scaling_factor >> 1);
-        int start_y = start_end.at(1) * scaling_factor + (scaling_factor >> 1);
-        int end_x = start_end.at(2) * scaling_factor + (scaling_factor >> 1);
-        int end_y = start_end.at(3) * scaling_factor + (scaling_factor >> 1);
-        draw_line(start_x, start_y, end_x, end_y);
+        Vector2i start(start_end.at(0) * scaling_factor + (scaling_factor >> 1),
+                       start_end.at(1) * scaling_factor + (scaling_factor >> 1));
+        Vector2i end(start_end.at(2) * scaling_factor + (scaling_factor >> 1),
+                     start_end.at(3) * scaling_factor + (scaling_factor >> 1));
+        draw_line(start, end);
     }
 
+    sf::RenderWindow *Display::getWindowPtr() const {
+        return this->window_ptr;
+    }
+
+    void Display::drawVisitedFields(sf::RenderWindow *win_ptr, Vector2i fieldVector) {
+        sf::RectangleShape rect(sf::Vector2f((float)scaling_factor,(float)scaling_factor));
+        rect.setFillColor(sf::Color(0, 100, 100));
+        rect.setPosition(sf::Vector2f((float)(fieldVector.getX() * scaling_factor), (float)(fieldVector.getY() * scaling_factor)));
+        window_ptr->draw(rect);
+    }
 }

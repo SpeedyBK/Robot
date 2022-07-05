@@ -6,6 +6,7 @@
 #define ROBOT_FACTORY_H
 
 #include "World.h"
+#include "WorldUtils/Vector2i.h"
 
 class World;
 
@@ -13,17 +14,17 @@ class Factory {
 
 public:
 
-    Factory(int x, int y, World* w);
+    Factory(int x, int y, World *w);
 
     ~Factory();
 
-    void set_world_pointer (World* W) {w = W;};
+    void set_world_pointer(World *W) { w = W; };
 
     /*!
      * Gets Position of Factory as a Pair.
      * @return first = x, second = y.
      */
-    std::pair<int, int> get_position();
+    RobbyTheRobot::Vector2i get_position() const;
 
     void wait_till_finished() const;
 
@@ -31,7 +32,7 @@ public:
 
 private:
 
-    World* w;
+    World *w;
 
     int x;
     int y;
@@ -41,6 +42,5 @@ private:
     int PROCESSING_DURATION;
 
 };
-
 
 #endif //ROBOT_FACTORY_H

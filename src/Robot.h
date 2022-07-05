@@ -6,6 +6,7 @@
 #define ROBOT_ROBOT_H
 
 #include "World.h"
+#include "WorldUtils/Vector2i.h"
 
 class World;
 
@@ -17,7 +18,7 @@ public:
 
     ~Robot();
 
-    std::pair<int, int> get_position();
+    RobbyTheRobot::Vector2i get_position() const;
 
     bool move_left();
 

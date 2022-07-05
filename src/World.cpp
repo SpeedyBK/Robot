@@ -48,10 +48,10 @@ World::World(int n) {
     }
 
     F = std::make_shared<Factory>(n/2, n-1, this);
-    R = std::make_shared<Robot>(F->get_position().first, F->get_position().second, this);
+    R = std::make_shared<Robot>(F->get_position().getX(), F->get_position().getY(), this);
 
-    field_times.at(F->get_position().second).at(F->get_position().first) = 0;
-    field_materials.at(F->get_position().second).at(F->get_position().first) = 0;
+    field_times.at(F->get_position().getY()).at(F->get_position().getX()) = 0;
+    field_materials.at(F->get_position().getY()).at(F->get_position().getX()) = 0;
 }
 
 World::~World(){
@@ -120,11 +120,11 @@ std::shared_ptr<Factory> World::get_factory_ptr() {
     return F;
 }
 
-std::pair<int, int> World::get_robot_position() {
+RobbyTheRobot::Vector2i World::get_robot_position() {
     return R->get_position();
 }
 
-std::pair<int, int> World::get_factory_position() {
+RobbyTheRobot::Vector2i World::get_factory_position() {
     return F->get_position();
 }
 

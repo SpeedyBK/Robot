@@ -9,6 +9,7 @@
 #include <memory>
 #include "Factory.h"
 #include "Robot.h"
+#include "WorldUtils/Vector2i.h"
 
 class Factory;
 class Robot;
@@ -45,9 +46,9 @@ public:
 
     int get_max_field_minerals() { return max_field_minerals; }
 
-    std::pair<int, int> get_robot_position();
+    RobbyTheRobot::Vector2i get_robot_position();
 
-    std::pair<int, int> get_factory_position();
+    RobbyTheRobot::Vector2i get_factory_position();
 
     std::vector<std::vector<int>> &get_material_map() { return this->field_materials; }
 
