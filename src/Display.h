@@ -25,11 +25,11 @@ namespace RobbyTheRobot {
 
         void draw();
 
-        void calc_line(vector<int> &start_end);
+        void calc_line(Vector2i& start, Vector2i& end);
 
         sf::RenderWindow* getWindowPtr() const;
 
-        void drawVisitedFields(sf::RenderWindow* win_ptr, Vector2i fieldVector);
+        void drawVisitedFields(sf::RenderWindow* win_ptr, Vector2i fieldVector, int green, int blue);
 
     private:
 

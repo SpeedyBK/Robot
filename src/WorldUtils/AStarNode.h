@@ -5,6 +5,7 @@
 #ifndef ROBOT_ASTARNODE_H
 #define ROBOT_ASTARNODE_H
 
+#include <string>
 #include "Vector2i.h"
 
 namespace RobbyTheRobot {
@@ -14,6 +15,8 @@ namespace RobbyTheRobot {
     public:
 
         AStarNode(Vector2i coordinates, AStarNode* parent, double gCost, double hCost);
+
+        std::string getName() const { return name; }
 
         void setHCost(double hCostP);
 
@@ -25,9 +28,15 @@ namespace RobbyTheRobot {
 
         double getHCost() const { return hCost; }
 
-        friend bool operator<(const AStarNode& a, const AStarNode&b);
+        Vector2i getCoordinates() const { return coordinates; }
+
+        friend bool operator<(const AStarNode& a, const AStarNode& b);
+
+        friend bool operator>(const AStarNode& a, const AStarNode& b);
 
     private:
+
+        std::string name;
 
         AStarNode* parent;
 

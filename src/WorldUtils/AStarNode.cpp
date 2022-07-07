@@ -13,6 +13,7 @@ namespace RobbyTheRobot{
         this->gCost = gCost;
         this->hCost = hCost;
         this->fCost = this->gCost + this->hCost;
+        this->name = "Node-"+ std::to_string(coordinates.getX()) + std::to_string(coordinates.getY());
 
     }
 
@@ -28,6 +29,10 @@ namespace RobbyTheRobot{
 
     bool operator<(const AStarNode &a, const AStarNode &b) {
         return (a.getFCost() < b.getFCost());
+    }
+
+    bool operator>(const AStarNode &a, const AStarNode &b) {
+        return (a.getFCost() > b.getFCost());
     }
 
 }

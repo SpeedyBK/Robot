@@ -2,6 +2,7 @@
 // Created by Benja on 6/21/2022.
 //
 
+#include <unistd.h>
 #include <iostream>
 #include <cmath>
 #include "Display.h"
@@ -31,7 +32,7 @@ namespace RobbyTheRobot {
 
         cout << "Drawing" << endl;
 
-        AStarSearch aStar(this, {2, 2}, {4, 4});
+        AStarSearch aStar(this, W, {2, 2}, {12, 2});
 
         while (window_ptr->isOpen()) {
             sf::Event event;
@@ -45,10 +46,9 @@ namespace RobbyTheRobot {
             draw_minerals();
             draw_factory();
             draw_robot();
-            aStar.visitTest();
+            aStar.findPath();
             window_ptr->display();
         }
-
     }
 
     void Display::draw_times() {
@@ -106,19 +106,19 @@ namespace RobbyTheRobot {
         window_ptr->draw(l, 2, sf::Lines);
     }
 
-    void Display::calc_line(vector<int> &start_end) {
-        Vector2i start(start_end.at(0) * scaling_factor + (scaling_factor >> 1),
-                       start_end.at(1) * scaling_factor + (scaling_factor >> 1));
-        Vector2i end(start_end.at(2) * scaling_factor + (scaling_factor >> 1),
-                     start_end.at(3) * scaling_factor + (scaling_factor >> 1));
-        draw_line(start, end);
+    void Display::calc_line(Vector2i& start, Vector2i& end) {
+        Vector2i st(start.getX() * scaling_factor + (scaling_factor >> 1),
+                       start.getY() * scaling_factor + (scaling_factor >> 1));
+        Vector2i en(end.getX() * scaling_factor + (scaling_factor >> 1),
+                     end.getY() * scaling_factor + (scaling_factor >> 1));
+        draw_line(st, en);
     }
 
     sf::RenderWindow *Display::getWindowPtr() const {
         return this->window_ptr;
     }
 
-    void Display::drawVisitedFields(sf::RenderWindow *win_ptr, Vector2i fieldVector) {
+    void Display::drawVisitedFields(sf::RenderWindow *win_ptr, Vector2i fieldVector, int green, int blue) {
         sf::RectangleShape rect(sf::Vector2f((float)scaling_factor,(float)scaling_factor));
         rect.setFillColor(sf::Color(0, 100, 100));
         rect.setPosition(sf::Vector2f((float)(fieldVector.getX() * scaling_factor), (float)(fieldVector.getY() * scaling_factor)));

@@ -23,6 +23,8 @@ namespace RobbyTheRobot {
 
         int getY() const { return this->y; }
 
+        friend bool operator==(const Vector2i& a, const Vector2i& b);
+
     private:
 
         int x;

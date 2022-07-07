@@ -5,12 +5,11 @@
 #ifndef ROBOT_ASTARSEARCH_H
 #define ROBOT_ASTARSEARCH_H
 
-#include <queue>
 #include <set>
-#include <memory>
 #include "AStarNode.h"
 #include "Vector2i.h"
 #include "../Display.h"
+#include "FibonacciHeap.h"
 
 namespace RobbyTheRobot {
 
@@ -20,13 +19,23 @@ namespace RobbyTheRobot {
 
     public:
 
-        AStarSearch(Display* dp, Vector2i start, Vector2i end);
+        AStarSearch(Display* dp, shared_ptr<World> wp, Vector2i start, Vector2i end);
 
         ~AStarSearch() = default;
 
-        void visitTest();
+        void startEndTest();
+
+        void findPath();
 
     private:
+
+        void expandNode(AStarNode node, FibonacciHeap<AStarNode>& oL, set<AStarNode>& cL);
+
+        void visDistance(Vector2i& start, Vector2i& end);
+
+        void visualize(Vector2i coordinates, int blue, int green);
+
+        static double getDistance(Vector2i& a, Vector2i& b);
 
         Vector2i start;
 
@@ -34,9 +43,7 @@ namespace RobbyTheRobot {
 
         Display* d;
 
-        queue<AStarNode> openList;
-
-        set<AStarNode> closedList;
+        shared_ptr<World> wp;
 
     };
 }
