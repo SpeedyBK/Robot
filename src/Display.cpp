@@ -16,10 +16,11 @@ namespace RobbyTheRobot {
 
         cout << "Drawing Class generated..." << endl;
 
-        this->W = std::make_shared<World>(15);
+        int n = 31;
+        this->W = std::make_shared<World>(n);
         this->G = std::make_shared<Graph>();
 
-        scaling_factor = 64;
+        scaling_factor = 32;
 
         width = W->get_n() * scaling_factor;
         heigt = W->get_n() * scaling_factor;
@@ -32,8 +33,6 @@ namespace RobbyTheRobot {
 
         cout << "Drawing" << endl;
 
-        AStarSearch aStar(this, W, {2, 2}, {12, 2});
-
         while (window_ptr->isOpen()) {
             sf::Event event;
             while (window_ptr->pollEvent(event)) {
@@ -42,12 +41,14 @@ namespace RobbyTheRobot {
                 }
             }
             window_ptr->clear(sf::Color::Black);
+            auto aStar = new AStarSearch(this, W, {1, 1}, {W->get_n()-2, W->get_n()-2});
             draw_times();
             draw_minerals();
             draw_factory();
             draw_robot();
-            aStar.findPath();
+            aStar->findPath();
             window_ptr->display();
+            delete aStar;
         }
     }
 
@@ -120,7 +121,7 @@ namespace RobbyTheRobot {
 
     void Display::drawVisitedFields(sf::RenderWindow *win_ptr, Vector2i fieldVector, int green, int blue) {
         sf::RectangleShape rect(sf::Vector2f((float)scaling_factor,(float)scaling_factor));
-        rect.setFillColor(sf::Color(0, 100, 100));
+        rect.setFillColor(sf::Color(0, green, blue));
         rect.setPosition(sf::Vector2f((float)(fieldVector.getX() * scaling_factor), (float)(fieldVector.getY() * scaling_factor)));
         window_ptr->draw(rect);
     }

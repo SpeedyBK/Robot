@@ -14,63 +14,77 @@ namespace RobbyTheRobot {
         this->start = start;
         this->end = end;
         this->wp = wp;
+        this->heuristicFactor = 3;
     }
 
     void AStarSearch::findPath() {
-        cout << "Searching Path" << endl;
-        FibonacciHeap<AStarNode> openList;
-        set<AStarNode> closedList;
-
-        AStarNode currentNode(start, nullptr, 0, getDistance(start, end));
-        visDistance(start, end);
-        openList.push(currentNode);
+        //Create Start-Node:
+        auto currentNode = make_shared<AStarNode>(start,
+                                                                          nullptr,
+                                                                          0,
+                                                                          heuristicFactor * getDistance(start, end));
+        openList.push_back(currentNode);
         int i = 0;
         while (!openList.empty()){
-            currentNode = openList.get_extract_min();
-            cout << "Current Node: " << currentNode.getName() << endl;
-            cout << currentNode.getName() << "-" << currentNode.getGCost() << "-" << currentNode.getHCost() << endl;
-            if (currentNode.getCoordinates() == end){
-                cout << i << ". End reached ..." << endl;
-                throw (RobbyTheRobot::Exception("Stop"));
+            currentNode = openList.front();
+            openList.pop_front();
+            visualize(currentNode->getCoordinates(), 255, 0);
+            if (currentNode->getCoordinates() == end){
+                cout << "Goal reached!" << endl;
+                usleep(100000);
+                while(currentNode->getParent() != nullptr){
+                    visualize(currentNode->getCoordinates(), 0, 255);
+                    currentNode = currentNode->getParent();
+                    cout << currentNode->getName() << endl;
+                }
+                visualize(currentNode->getCoordinates(), 0, 255);
+                usleep(10000000);
+                throw (RobbyTheRobot::Exception("Goal reached!"));
                 return;
             }
-            closedList.insert(currentNode);
-            expandNode(currentNode, openList, closedList);
+            closedList.push_back(currentNode);
+            expandNode(currentNode);
             i++;
         }
     }
 
-    void AStarSearch::expandNode (AStarNode node, FibonacciHeap<AStarNode>& oL, set<AStarNode>& cL){
-        bool validField[9] = {false, true, false,
-                              true, false, true,
-                              false, true, false};
+    void AStarSearch::expandNode (const shared_ptr<AStarNode>& currentNode){
+        cout << "Expanding " << currentNode->getName() << endl;
+        //We can only move left, right, up and down.
+        std::array<bool, 9> validFields = { false, true, false,
+                                            true, false, true,
+                                            false, true, false};
         for (int i = 0; i < 9; i++){
-            //When it is not a valid move -> skip
-            if (!validField[i]){
+            if (!validFields[i]){
                 continue;
             }
-            //Creating nextNodes Coordinates.
-            int x = node.getCoordinates().getX();
-            int y = node.getCoordinates().getY();
-            int dx = i % 3 - 1;
-            int dy = i / 3 - 1;
-            Vector2i coordinatesOfNewNode = {x+dx, y+dy};
-            //When out of bounds -> skip
-            if (coordinatesOfNewNode.getX() >= wp->get_n() or
-                coordinatesOfNewNode.getX() < 0 or
-                coordinatesOfNewNode.getY() >= wp->get_n() or
-                coordinatesOfNewNode.getY() < 0){
+            int x = currentNode->getCoordinates().getX();
+            int y = currentNode->getCoordinates().getY();
+            int xi = (i % 3) - 1;
+            int yi = (i / 3) - 1;
+            Vector2i nextPosition(x+xi, y+yi);
+            if ((nextPosition.getX() < 0 or nextPosition.getY() < 0) or
+                (nextPosition.getX() >= wp->get_n() or nextPosition.getY() >= wp->get_n())){
                 continue;
             }
-            Vector2i coordinatesOfOldNode = node.getCoordinates();
-            double gCost = node.getGCost() + getDistance(coordinatesOfOldNode, coordinatesOfNewNode);
-            double hCost = getDistance(coordinatesOfNewNode, end);
-            AStarNode newNode(coordinatesOfNewNode, &node, gCost, hCost);
-            //When on closed list -> skip
-            for (auto &it : cL) {
+            Vector2i currPosition(currentNode->getCoordinates().getX(), currentNode->getCoordinates().getY());
+            double gCost = currentNode->getGCost()
+                         + getDistance(currPosition, nextPosition)
+                         * wp->get_field_time(nextPosition.getX(), nextPosition.getY());
+            double hCost = heuristicFactor * getDistance(nextPosition, end);
+            shared_ptr<AStarNode>newNode = make_shared<AStarNode>(nextPosition, currentNode, gCost, hCost);
+            if (isInList(nextPosition, closedList) and gCost >= newNode->getGCost()){
+                continue;
             }
-            oL.push(newNode);
-            cout << "Expand Node:" << newNode.getName() << "-" << newNode.getGCost() << "-" << newNode.getHCost() << endl;
+            if (!isInList(nextPosition, openList) or gCost < newNode->getGCost()){
+                openList.push_front(newNode);
+                sort(openList.begin(), openList.end(), [](shared_ptr<AStarNode>& a, shared_ptr<AStarNode>& b){
+                    return *a < *b;
+                });
+            }
+        }
+        for (auto &it : openList){
+            cout << it->getName() << "-" << it->getFCost() << "-" << it->getHCost() << endl;
         }
     }
 
@@ -83,6 +97,8 @@ namespace RobbyTheRobot {
     void AStarSearch::visualize(Vector2i coordinates, int blue, int green) {
         auto winPtr = d->getWindowPtr();
         d->drawVisitedFields(winPtr, coordinates, green, blue);
+        winPtr->display();
+        usleep(50000);
     }
 
     void AStarSearch::startEndTest() {
@@ -94,5 +110,10 @@ namespace RobbyTheRobot {
     void AStarSearch::visDistance(Vector2i& s, Vector2i& e) {
         d->calc_line(s, e);
         d->getWindowPtr()->display();
+    }
+
+    bool AStarSearch::isInList(Vector2i& coordinates, deque<shared_ptr<AStarNode>>& L) {
+        return std::any_of(L.begin(), L.end(),
+               [coordinates](shared_ptr<AStarNode>& y) { return coordinates == y->getCoordinates(); });
     }
 }

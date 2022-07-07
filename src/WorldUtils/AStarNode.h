@@ -6,6 +6,7 @@
 #define ROBOT_ASTARNODE_H
 
 #include <string>
+#include <memory>
 #include "Vector2i.h"
 
 namespace RobbyTheRobot {
@@ -14,13 +15,15 @@ namespace RobbyTheRobot {
 
     public:
 
-        AStarNode(Vector2i coordinates, AStarNode* parent, double gCost, double hCost);
+        AStarNode(Vector2i coordinates, std::shared_ptr<AStarNode> parent, double gCost, double hCost);
 
         std::string getName() const { return name; }
 
         void setHCost(double hCostP);
 
         void setGCost(double gCostP);
+
+        std::shared_ptr<AStarNode> getParent() { return this->parent; }
 
         double getFCost() const { return fCost; }
 
@@ -32,13 +35,11 @@ namespace RobbyTheRobot {
 
         friend bool operator<(const AStarNode& a, const AStarNode& b);
 
-        friend bool operator>(const AStarNode& a, const AStarNode& b);
-
     private:
 
         std::string name;
 
-        AStarNode* parent;
+        std::shared_ptr<AStarNode> parent;
 
         Vector2i coordinates;
 

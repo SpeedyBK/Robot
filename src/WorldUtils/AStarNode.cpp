@@ -6,7 +6,7 @@
 
 namespace RobbyTheRobot{
 
-    AStarNode::AStarNode(Vector2i coordinates, AStarNode *parent, double gCost, double hCost) {
+    AStarNode::AStarNode(Vector2i coordinates, std::shared_ptr<AStarNode> parent, double gCost, double hCost) {
 
         this->coordinates = coordinates;
         this->parent = parent;
@@ -29,10 +29,6 @@ namespace RobbyTheRobot{
 
     bool operator<(const AStarNode &a, const AStarNode &b) {
         return (a.getFCost() < b.getFCost());
-    }
-
-    bool operator>(const AStarNode &a, const AStarNode &b) {
-        return (a.getFCost() > b.getFCost());
     }
 
 }

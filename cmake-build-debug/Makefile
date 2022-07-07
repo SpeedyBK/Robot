@@ -249,6 +249,30 @@ src/Robot.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/src/Robot.cpp.s
 .PHONY : src/Robot.cpp.s
 
+src/Tests/Tests.o: src/Tests/Tests.cpp.o
+.PHONY : src/Tests/Tests.o
+
+# target to build an object file
+src/Tests/Tests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/src/Tests/Tests.cpp.o
+.PHONY : src/Tests/Tests.cpp.o
+
+src/Tests/Tests.i: src/Tests/Tests.cpp.i
+.PHONY : src/Tests/Tests.i
+
+# target to preprocess a source file
+src/Tests/Tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/src/Tests/Tests.cpp.i
+.PHONY : src/Tests/Tests.cpp.i
+
+src/Tests/Tests.s: src/Tests/Tests.cpp.s
+.PHONY : src/Tests/Tests.s
+
+# target to generate assembly for a file
+src/Tests/Tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/src/Tests/Tests.cpp.s
+.PHONY : src/Tests/Tests.cpp.s
+
 src/World.o: src/World.cpp.o
 .PHONY : src/World.o
 
@@ -441,6 +465,9 @@ help:
 	@echo "... src/Robot.o"
 	@echo "... src/Robot.i"
 	@echo "... src/Robot.s"
+	@echo "... src/Tests/Tests.o"
+	@echo "... src/Tests/Tests.i"
+	@echo "... src/Tests/Tests.s"
 	@echo "... src/World.o"
 	@echo "... src/World.i"
 	@echo "... src/World.s"

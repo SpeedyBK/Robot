@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Robot.dir/src/Factory.cpp.o.d"
   "CMakeFiles/Robot.dir/src/Robot.cpp.o"
   "CMakeFiles/Robot.dir/src/Robot.cpp.o.d"
+  "CMakeFiles/Robot.dir/src/Tests/Tests.cpp.o"
+  "CMakeFiles/Robot.dir/src/Tests/Tests.cpp.o.d"
   "CMakeFiles/Robot.dir/src/World.cpp.o"
   "CMakeFiles/Robot.dir/src/World.cpp.o.d"
   "CMakeFiles/Robot.dir/src/WorldUtils/AStarNode.cpp.o"
