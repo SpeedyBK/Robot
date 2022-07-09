@@ -6,9 +6,11 @@
 #define ROBOT_EDGE_H
 
 #include <iostream>
+#include <deque>
 #include <set>
 
 #include "Vertex.h"
+#include "../WorldUtils/Vector2i.h"
 
 using namespace std;
 
@@ -18,13 +20,13 @@ namespace RobbyTheRobot {
 
     public:
 
-        Edge(set<Vertex*> &vsd, int distance, int id);
+        Edge(set<Vertex*> &vsd, double distance, int id, deque<Vector2i> path);
 
         set<Vertex*> get_vertices_of_edge() const { return vsd; }
 
         int get_id() const { return this->id; }
 
-        int get_distance() const { return this->distance; }
+        double get_distance() const { return this->distance; }
 
         string get_name() const { return this->name; }
 
@@ -32,11 +34,13 @@ namespace RobbyTheRobot {
 
         set<Vertex*> vsd;
 
-        int distance;
+        double distance;
 
         string name;
 
         int id;
+
+        deque<Vector2i>path;
 
     };
 

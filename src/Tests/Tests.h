@@ -11,8 +11,11 @@ namespace RobbyTheRobot {
 
     public:
 
-        static bool fibTest();
         static bool aStarTest();
+
+        static bool graphTest();
+
+        static bool dispatchTest();
 
     };
 

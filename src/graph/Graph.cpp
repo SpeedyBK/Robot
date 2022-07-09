@@ -3,6 +3,7 @@
 //
 
 #include <memory>
+#include <utility>
 #include "Graph.h"
 #include "../Exception.h"
 
@@ -50,7 +51,7 @@ namespace RobbyTheRobot {
                 if (x_it > 0){
                     Vertex &v = create_vertex();
                     v.set_minerals(x_it);
-                    v.set_position(std::make_pair(x, y));
+                    v.set_position({x, y});
                 }
                 x++;
             }
@@ -75,8 +76,8 @@ namespace RobbyTheRobot {
         return os;
     }
 
-    Edge &Graph::create_edge(set<Vertex*> vsd, int distance) {
-        Edge *e = new Edge(vsd, distance, (int)edges.size() + 1);
+    Edge &Graph::create_edge(set<Vertex*> vsd, double distance, deque<Vector2i>path) {
+        Edge *e = new Edge(vsd, distance, (int)edges.size() + 1, std::move(path));
 
         for (auto &it : Edges() ) {
             Edge *eIt = it;
@@ -93,15 +94,17 @@ namespace RobbyTheRobot {
     void Graph::create_complete_graph_test() {
         for (int i = 1; i <= max_vertex_id; i++){
             for (int j = i + 1; j <= max_vertex_id; j++){
-                create_edge({get_vertex_by_id(i), get_vertex_by_id(j)}, 42);
+                deque<Vector2i> emptyPath;
+                create_edge({get_vertex_by_id(i), get_vertex_by_id(j)}, 42, emptyPath);
             }
         }
     }
 
-    void Graph::create_factory_vertex(int x, int y) {
+    Vertex &Graph::create_factory_vertex(int x, int y) {
         Vertex &v = create_vertex();
-        v.set_position(std::make_pair(x, y));
+        v.set_position({x, y});
         v.set_minerals(0);
+        return v;
     }
 }
 

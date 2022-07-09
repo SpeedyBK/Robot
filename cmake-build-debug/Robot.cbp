@@ -89,6 +89,12 @@
 		<Unit filename="/home/benjamin/CLionProjects/Robot/main.cpp">
 			<Option target="Robot"/>
 		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/Robot/src/Dispatcher/Dispatcher.cpp">
+			<Option target="Robot"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/Robot/src/Dispatcher/Dispatcher.h">
+			<Option target="Robot"/>
+		</Unit>
 		<Unit filename="/home/benjamin/CLionProjects/Robot/src/Display.cpp">
 			<Option target="Robot"/>
 		</Unit>
@@ -135,9 +141,6 @@
 			<Option target="Robot"/>
 		</Unit>
 		<Unit filename="/home/benjamin/CLionProjects/Robot/src/WorldUtils/AStarSearch.h">
-			<Option target="Robot"/>
-		</Unit>
-		<Unit filename="/home/benjamin/CLionProjects/Robot/src/WorldUtils/FibonacciHeap.h">
 			<Option target="Robot"/>
 		</Unit>
 		<Unit filename="/home/benjamin/CLionProjects/Robot/src/WorldUtils/Vector2i.cpp">

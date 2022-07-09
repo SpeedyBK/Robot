@@ -3,13 +3,15 @@
 //
 
 #include "Edge.h"
+
 namespace RobbyTheRobot {
 
-    Edge::Edge(set<Vertex*> &vsd, int distance, int id) {
+    Edge::Edge(set<Vertex*> &vsd, double distance, int id, deque<Vector2i> path) {
         this->id = id;
         this->name = "Edge_" + to_string(id);
         this->vsd = vsd;
         this->distance = distance;
+        this->path = std::move(path);
     }
 
     ostream &operator<<(ostream &os, const Edge &e) {

@@ -6,6 +6,7 @@
 #define ROBOT_VERTEX_H
 
 #include <iostream>
+#include "../WorldUtils/Vector2i.h"
 
 using namespace std;
 
@@ -25,9 +26,9 @@ namespace RobbyTheRobot {
 
         int get_minerals() const { return this->amount_of_minerals; }
 
-        pair<int, int> get_position() { return this->position; };
+        Vector2i get_position() { return this->position; }
 
-        void set_position(pair<int, int> postion) { this->position = postion; }
+        void set_position(Vector2i postion) { this->position = postion; }
 
         void set_minerals(int minerals) { this->amount_of_minerals = minerals; }
 
@@ -43,7 +44,7 @@ namespace RobbyTheRobot {
 
         int amount_of_minerals;
 
-        pair<int, int> position;
+        Vector2i position;
 
     };
 

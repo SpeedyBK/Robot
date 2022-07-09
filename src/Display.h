@@ -19,7 +19,7 @@ namespace RobbyTheRobot {
 
     public:
 
-        Display();
+        explicit Display(World* wp);
 
         ~Display() { delete this->window_ptr; }
 
@@ -43,14 +43,14 @@ namespace RobbyTheRobot {
 
         void draw_line(Vector2i start, Vector2i end);
 
-        shared_ptr<World> W;
+        World* wp;
 
         shared_ptr<Graph> G;
 
         sf::RenderWindow *window_ptr;
 
         int width;
-        int heigt;
+        int heigth;
 
         int scaling_factor;
 

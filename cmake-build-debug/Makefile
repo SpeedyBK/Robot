@@ -153,6 +153,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/Dispatcher/Dispatcher.o: src/Dispatcher/Dispatcher.cpp.o
+.PHONY : src/Dispatcher/Dispatcher.o
+
+# target to build an object file
+src/Dispatcher/Dispatcher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/src/Dispatcher/Dispatcher.cpp.o
+.PHONY : src/Dispatcher/Dispatcher.cpp.o
+
+src/Dispatcher/Dispatcher.i: src/Dispatcher/Dispatcher.cpp.i
+.PHONY : src/Dispatcher/Dispatcher.i
+
+# target to preprocess a source file
+src/Dispatcher/Dispatcher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/src/Dispatcher/Dispatcher.cpp.i
+.PHONY : src/Dispatcher/Dispatcher.cpp.i
+
+src/Dispatcher/Dispatcher.s: src/Dispatcher/Dispatcher.cpp.s
+.PHONY : src/Dispatcher/Dispatcher.s
+
+# target to generate assembly for a file
+src/Dispatcher/Dispatcher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Robot.dir/build.make CMakeFiles/Robot.dir/src/Dispatcher/Dispatcher.cpp.s
+.PHONY : src/Dispatcher/Dispatcher.cpp.s
+
 src/Display.o: src/Display.cpp.o
 .PHONY : src/Display.o
 
@@ -453,6 +477,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/Dispatcher/Dispatcher.o"
+	@echo "... src/Dispatcher/Dispatcher.i"
+	@echo "... src/Dispatcher/Dispatcher.s"
 	@echo "... src/Display.o"
 	@echo "... src/Display.i"
 	@echo "... src/Display.s"

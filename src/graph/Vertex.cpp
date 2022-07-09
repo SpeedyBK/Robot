@@ -9,14 +9,14 @@ namespace RobbyTheRobot {
     Vertex::Vertex(int id) : id(id) {
 
         this->name = "Vertex_" + to_string(id);
-        this->position = std::make_pair(0, 0);
+        this->position = {0, 0};
         this->amount_of_minerals = 0;
 
     }
 
     void Vertex::print_vertex() {
-        cout << name << " Position: " << position.first << "/"
-             << position.second << " Mineralcount: " << amount_of_minerals << endl;
+        cout << name << " Position: " << position.getX() << "/"
+             << position.getY() << " Mineralcount: " << amount_of_minerals << endl;
     }
 
     ostream &operator<<(ostream &os, const Vertex &v) {

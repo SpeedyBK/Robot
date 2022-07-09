@@ -43,7 +43,8 @@ add_executable(Robot main.cpp
                src/WorldUtils/AStarSearch.cpp
                src/Tests/Tests.h
                src/Tests/Tests.cpp
-               src/WorldUtils/FibonacciHeap.h
+               src/Dispatcher/Dispatcher.h
+               src/Dispatcher/Dispatcher.cpp
         )
 
 target_link_libraries(Robot sfml-graphics sfml-audio)

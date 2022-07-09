@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Robot.dir/main.cpp.o"
   "CMakeFiles/Robot.dir/main.cpp.o.d"
+  "CMakeFiles/Robot.dir/src/Dispatcher/Dispatcher.cpp.o"
+  "CMakeFiles/Robot.dir/src/Dispatcher/Dispatcher.cpp.o.d"
   "CMakeFiles/Robot.dir/src/Display.cpp.o"
   "CMakeFiles/Robot.dir/src/Display.cpp.o.d"
   "CMakeFiles/Robot.dir/src/Exception.cpp.o"

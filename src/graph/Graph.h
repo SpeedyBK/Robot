@@ -29,11 +29,11 @@ namespace RobbyTheRobot {
 
         Vertex &create_vertex(int id);
 
-        Edge &create_edge(set<Vertex*>vsd, int distance);
+        Edge &create_edge(set<Vertex*>vsd, double distance, deque<Vector2i> path);
 
         void create_vertices_from_map(vector<vector<int>>&world_map);
 
-        void create_factory_vertex(int x, int y);
+        Vertex &create_factory_vertex(int x, int y);
 
         void create_complete_graph_test();
 
@@ -43,9 +43,9 @@ namespace RobbyTheRobot {
         public:
             Edges(const std::set<Edge *>::iterator &begin, const std::set<Edge *>::iterator &end) : b(begin), e(end) {}
 
-            std::set<Edge *>::iterator begin() { return b; }
+            std::set<Edge *>::iterator begin() const { return b; }
 
-            std::set<Edge *>::iterator end() { return e; }
+            std::set<Edge *>::iterator end() const { return e; }
 
             std::set<Edge *>::iterator b;
             std::set<Edge *>::iterator e;
@@ -58,9 +58,9 @@ namespace RobbyTheRobot {
             Vertices(const std::set<Vertex *>::iterator &begin, const std::set<Vertex *>::iterator &end) : b(begin),
                                                                                                            e(end) {}
 
-            std::set<Vertex *>::iterator begin() { return b; }
+            std::set<Vertex *>::iterator begin() const { return b; }
 
-            std::set<Vertex *>::iterator end() { return e; }
+            std::set<Vertex *>::iterator end() const { return e; }
 
             std::set<Vertex *>::iterator b;
             std::set<Vertex *>::iterator e;
