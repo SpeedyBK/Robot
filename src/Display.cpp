@@ -16,11 +16,11 @@ namespace RobbyTheRobot {
 
         cout << "Drawing Class generated..." << endl;
 
-        int n = 31;
+        int n = 1000;
         this->W = std::make_shared<World>(n);
         this->G = std::make_shared<Graph>();
 
-        scaling_factor = 32;
+        scaling_factor = 5;
 
         width = W->get_n() * scaling_factor;
         heigt = W->get_n() * scaling_factor;
@@ -33,6 +33,8 @@ namespace RobbyTheRobot {
 
         cout << "Drawing" << endl;
 
+        auto aStar = new AStarSearch(this, W);
+
         while (window_ptr->isOpen()) {
             sf::Event event;
             while (window_ptr->pollEvent(event)) {
@@ -41,15 +43,16 @@ namespace RobbyTheRobot {
                 }
             }
             window_ptr->clear(sf::Color::Black);
-            auto aStar = new AStarSearch(this, W, {1, 1}, {W->get_n()-2, W->get_n()-2});
             draw_times();
             draw_minerals();
             draw_factory();
             draw_robot();
-            aStar->findPath();
+            aStar->createAllNodes();
+            aStar->findPathPQ({1, 1}, {W->get_n() - 2, W->get_n() - 2});
+            aStar->findPath({1, 1}, {W->get_n()-2, W->get_n()-2});
             window_ptr->display();
-            delete aStar;
         }
+        delete aStar;
     }
 
     void Display::draw_times() {

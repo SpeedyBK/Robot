@@ -13,7 +13,9 @@ namespace RobbyTheRobot{
         this->gCost = gCost;
         this->hCost = hCost;
         this->fCost = this->gCost + this->hCost;
-        this->name = "Node-"+ std::to_string(coordinates.getX()) + std::to_string(coordinates.getY());
+        this->name = "Node_"+ std::to_string(coordinates.getX()) + "/" + std::to_string(coordinates.getY());
+        this->inOpenList = false;
+        this->inClosedList = false;
 
     }
 

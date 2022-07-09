@@ -41,8 +41,9 @@ add_executable(Robot main.cpp
                src/WorldUtils/AStarNode.cpp
                src/WorldUtils/AStarSearch.h
                src/WorldUtils/AStarSearch.cpp
-        src/Tests/Tests.h
+               src/Tests/Tests.h
                src/Tests/Tests.cpp
+               src/WorldUtils/FibonacciHeap.h
         )
 
 target_link_libraries(Robot sfml-graphics sfml-audio)

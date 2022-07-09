@@ -137,6 +137,9 @@
 		<Unit filename="/home/benjamin/CLionProjects/Robot/src/WorldUtils/AStarSearch.h">
 			<Option target="Robot"/>
 		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/Robot/src/WorldUtils/FibonacciHeap.h">
+			<Option target="Robot"/>
+		</Unit>
 		<Unit filename="/home/benjamin/CLionProjects/Robot/src/WorldUtils/Vector2i.cpp">
 			<Option target="Robot"/>
 		</Unit>
