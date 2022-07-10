@@ -76,8 +76,8 @@ namespace RobbyTheRobot {
         return os;
     }
 
-    Edge &Graph::create_edge(set<Vertex*> vsd, double distance, deque<Vector2i>path) {
-        Edge *e = new Edge(vsd, distance, (int)edges.size() + 1, std::move(path));
+    Edge &Graph::create_edge(set<Vertex*> vsd, double distance) {
+        Edge *e = new Edge(vsd, distance, (int)edges.size() + 1);
 
         for (auto &it : Edges() ) {
             Edge *eIt = it;
@@ -94,8 +94,7 @@ namespace RobbyTheRobot {
     void Graph::create_complete_graph_test() {
         for (int i = 1; i <= max_vertex_id; i++){
             for (int j = i + 1; j <= max_vertex_id; j++){
-                deque<Vector2i> emptyPath;
-                create_edge({get_vertex_by_id(i), get_vertex_by_id(j)}, 42, emptyPath);
+                create_edge({get_vertex_by_id(i), get_vertex_by_id(j)}, 42);
             }
         }
     }

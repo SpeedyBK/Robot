@@ -9,10 +9,10 @@
 
 namespace RobbyTheRobot {
 
-    AStarSearch::AStarSearch(Display* dp, World* wp) {
+    AStarSearch::AStarSearch(Display* dp, World* wp, double hFactor) {
         this->d = dp;
         this->wp = wp;
-        this->heuristicFactor = 2.5;
+        this->heuristicFactor = hFactor;
         pathTotalTime = 0;
     }
 
@@ -48,7 +48,6 @@ namespace RobbyTheRobot {
                 while(currentNode->getParent() != nullptr){
                     if (d != nullptr) { visualize(currentNode->getCoordinates(), 0, 255); }
                     // cout << currentNode->getName() << endl;
-                    path.push_front(currentNode->getCoordinates());
                     currentNode = currentNode->getParent();
                 }
                 if (d != nullptr) { visualize(currentNode->getCoordinates(), 0, 255); }
@@ -143,8 +142,8 @@ namespace RobbyTheRobot {
         return allNodes.at(pos.getY()).at(pos.getX());
     }
 
-    pair<deque<Vector2i>, double> AStarSearch::getPathAndTime() {
-        return std::make_pair(path, pathTotalTime);
+    double AStarSearch::getPathTime() const {
+        return pathTotalTime;
     }
 
 }

@@ -19,7 +19,7 @@ namespace RobbyTheRobot {
 
     public:
 
-        explicit Dispatcher(World* w);
+        Dispatcher(World* w, double hFactor);
 
         ~Dispatcher() = default;
 

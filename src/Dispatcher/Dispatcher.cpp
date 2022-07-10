@@ -8,7 +8,7 @@
 
 namespace RobbyTheRobot {
 
-    Dispatcher::Dispatcher(World* w) : w(w), aStar(nullptr, w) {
+    Dispatcher::Dispatcher(World* w, double hFactor) : w(w), aStar(nullptr, w, hFactor) {
         this->g.create_vertices_from_map(w->get_material_map());
         this->FactoryVertex = &this->g.create_factory_vertex(w->get_factory_position().getX(), w->get_factory_position().getY());
     }
@@ -22,9 +22,9 @@ namespace RobbyTheRobot {
                 continue;
             }
             aStar.findPathPQ(FactoryVertex->get_position(), v->get_position());
-            auto pathAndCost = aStar.getPathAndTime();
+            double pathCost = aStar.getPathTime();
             set<Vertex*> vsd = {FactoryVertex, v};
-            g.create_edge(vsd, pathAndCost.second, pathAndCost.first);
+            g.create_edge(vsd, pathCost);
             aStar.resetAll();
             cout << i << ": Path Done" << endl;
             i++;

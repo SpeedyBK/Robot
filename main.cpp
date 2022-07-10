@@ -41,8 +41,9 @@ int main(int argc, char *argv[]) {
 
     if (mode == Mode::Run){
         int n = 200;
+        double hFactor = 2.5;
         World w(n);
-        Dispatcher dis(&w);
+        Dispatcher dis(&w, hFactor);
         dis.createFactoryToMinsPaths();
         dis.printPathCosts();
         return 0;

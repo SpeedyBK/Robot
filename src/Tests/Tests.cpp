@@ -19,7 +19,8 @@ namespace RobbyTheRobot {
             cout << "A-Star Test:" << endl;
             int n = 1000;
             auto W = World(n);
-            AStarSearch aStar(nullptr, &W);
+            double hFactor = 2.5;
+            AStarSearch aStar(nullptr, &W, hFactor);
             clock_t start, end;
             cout << "   " << "Creating all Nodes.." << endl;
             start = clock();
@@ -32,7 +33,7 @@ namespace RobbyTheRobot {
             aStar.findPathPQ({1, 1}, {n - 1, n - 1});
             end = clock();
             cout << "   " << "Done in " << fixed << double(end - start) / double(CLOCKS_PER_SEC) << setprecision(5) << " sec "
-                 << endl << "   " << "Total Cost: " << aStar.getPathAndTime().second << endl << endl;
+                 << endl << "   " << "Total Cost: " << aStar.getPathTime() << endl << endl;
             cout << "   " << "Resetting all Nodes.." << endl;
             start = clock();
             aStar.resetAll();
@@ -78,10 +79,11 @@ namespace RobbyTheRobot {
 
     bool Tests::dispatchTest() {
         try {
-            int n = 600;
+            int n = 1000;
+            double hFactor = 3.2;
             World w(n);
             clock_t start = clock();
-            Dispatcher dis(&w);
+            Dispatcher dis(&w, hFactor);
             dis.createFactoryToMinsPaths();
             dis.printPathCosts();
             clock_t end = clock();

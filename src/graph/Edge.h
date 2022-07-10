@@ -20,7 +20,7 @@ namespace RobbyTheRobot {
 
     public:
 
-        Edge(set<Vertex*> &vsd, double distance, int id, deque<Vector2i> path);
+        Edge(set<Vertex*> &vsd, double distance, int id);
 
         set<Vertex*> get_vertices_of_edge() const { return vsd; }
 
@@ -39,8 +39,6 @@ namespace RobbyTheRobot {
         string name;
 
         int id;
-
-        deque<Vector2i>path;
 
     };
 

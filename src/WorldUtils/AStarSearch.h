@@ -28,7 +28,7 @@ namespace RobbyTheRobot {
 
     public:
 
-        AStarSearch(Display* dp, World* wp);
+        AStarSearch(Display* dp, World* wp, double hFactor);
 
         ~AStarSearch() = default;
 
@@ -40,7 +40,7 @@ namespace RobbyTheRobot {
 
         void resetAll();
 
-        pair<deque<Vector2i>, double> getPathAndTime();
+        double getPathTime() const;
 
     private:
 
@@ -65,8 +65,6 @@ namespace RobbyTheRobot {
         priority_queue<shared_ptr<AStarNode>, deque<shared_ptr<AStarNode>>, lesscmp> openListPQ;
 
         set<shared_ptr<AStarNode>>closedListPQ;
-
-        deque<Vector2i> path;
 
         double pathTotalTime;
 

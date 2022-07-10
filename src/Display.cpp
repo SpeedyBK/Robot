@@ -34,7 +34,7 @@ namespace RobbyTheRobot {
 
         cout << "Drawing" << endl;
 
-        auto aStar = new AStarSearch(this, wp);
+        auto aStar = new AStarSearch(this, wp, 2.5);
 
         bool doOnce = true;
 
