@@ -8,6 +8,7 @@
 #include <iostream>
 #include <vector>
 #include <set>
+#include <map>
 #include <unordered_map>
 
 #include "Vertex.h"
@@ -34,6 +35,8 @@ namespace RobbyTheRobot {
         void create_vertices_from_map(vector<vector<int>>&world_map);
 
         Vertex &create_factory_vertex(int x, int y);
+
+        Vertex* getVertexFromPosition(Vector2i coord) { return coordinatesToVertexMap.at(coord); }
 
         void create_complete_graph_test();
 
@@ -78,6 +81,8 @@ namespace RobbyTheRobot {
 
         set<Vertex *> vertices;
         unordered_map<int, Vertex*> vertex_of_id;
+
+        map<Vector2i, Vertex*> coordinatesToVertexMap;
 
         set<Edge *> edges;
 

@@ -43,7 +43,7 @@ int main(int argc, char *argv[]) {
         int n = 200;
         double hFactor = 2.5;
         World w(n);
-        Dispatcher dis(&w, hFactor);
+        Dispatcher dis(&w, nullptr, hFactor);
         dis.createFactoryToMinsPaths();
         dis.printPathCosts();
         return 0;
@@ -52,7 +52,8 @@ int main(int argc, char *argv[]) {
     if (mode == Mode::Visual) {
         World w(15);
         Display d(&w);
-        d.draw(); //Strange Name for a Programm-Loop.
+        Dispatcher dis(&w, &d, 2.5);
+        dis.vis();
         return 0;
     }
 }

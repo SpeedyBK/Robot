@@ -8,10 +8,13 @@
 
 namespace RobbyTheRobot {
 
-    Dispatcher::Dispatcher(World* w, double hFactor) : w(w), aStar(nullptr, w, hFactor) {
+    Dispatcher::Dispatcher(World* w, Display* d, double hFactor) : w(w), aStar(d, w, hFactor) {
+        this->d = d;
         this->g.create_vertices_from_map(w->get_material_map());
         this->FactoryVertex = &this->g.create_factory_vertex(w->get_factory_position().getX(), w->get_factory_position().getY());
     }
+
+
 
     void Dispatcher::createFactoryToMinsPaths() {
 
@@ -29,7 +32,6 @@ namespace RobbyTheRobot {
             cout << i << ": Path Done" << endl;
             i++;
         }
-
     }
 
     void Dispatcher::printPathCosts() {
@@ -39,6 +41,34 @@ namespace RobbyTheRobot {
             totalCost += e->get_distance();
         }
         cout << "Total Cost: " << totalCost << endl;
+    }
+
+    void Dispatcher::vis() {
+
+        auto win_ptr = d->getWindowPtr();
+
+        dStates dstate = dStates::drawStaticStuff;
+
+        while (win_ptr->isOpen()) {
+            sf::Event event;
+            while (win_ptr->pollEvent(event)) {
+                if (event.type == sf::Event::Closed) {
+                    win_ptr->close();
+                }
+            }
+
+            switch (dstate) {
+                case dStates::drawStaticStuff:
+                    d->draw_times();
+                    d->draw_minerals();
+                    d->draw_factory();
+                    win_ptr->display();
+                    dstate = dStates::empty;
+                    break;
+                case dStates::empty:
+                    break;
+            }
+        }
     }
 
 }

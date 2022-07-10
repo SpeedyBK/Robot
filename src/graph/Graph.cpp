@@ -50,6 +50,7 @@ namespace RobbyTheRobot {
             for(auto &x_it : y_it){
                 if (x_it > 0){
                     Vertex &v = create_vertex();
+                    coordinatesToVertexMap[Vector2i(x, y)] = &v;
                     v.set_minerals(x_it);
                     v.set_position({x, y});
                 }

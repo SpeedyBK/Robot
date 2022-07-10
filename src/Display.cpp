@@ -30,45 +30,6 @@ namespace RobbyTheRobot {
 
     }
 
-    void Display::draw() {
-
-        cout << "Drawing" << endl;
-
-        auto aStar = new AStarSearch(this, wp, 2.5);
-
-        bool doOnce = true;
-
-        while (window_ptr->isOpen()) {
-            sf::Event event;
-            while (window_ptr->pollEvent(event)) {
-                if (event.type == sf::Event::Closed) {
-                    window_ptr->close();
-                }
-            }
-            window_ptr->clear(sf::Color::Black);
-            draw_times();
-            draw_minerals();
-            draw_factory();
-            draw_robot();
-            if (doOnce) {
-                for (int i = 0; i < 2; i++) {
-                    if (i == 0) {
-                        aStar->createAllNodes();
-                        aStar->findPathPQ({1, 1}, {wp->get_n() - 2, wp->get_n() - 2});
-                        aStar->resetAll();
-                    }else{
-                        aStar->createAllNodes();
-                        aStar->findPathPQ({1, wp->get_n() - 2}, {wp->get_n() - 2, 1});
-                        aStar->resetAll();
-                    }
-                }
-                doOnce = false;
-            }
-            window_ptr->display();
-        }
-        delete aStar;
-    }
-
     void Display::draw_times() {
         for (int x = 0; x < wp->get_n(); x++) {
             for (int y = 0; y < wp->get_n(); y++) {
@@ -106,6 +67,7 @@ namespace RobbyTheRobot {
         robbi.setPosition((float) wp->get_robot_position().getX() * (float) scaling_factor + (float) shrink_value / 2,
                           (float) wp->get_robot_position().getY() * (float) scaling_factor + (float) shrink_value / 2);
         window_ptr->draw(robbi);
+        window_ptr->display();
     }
 
     void Display::draw_factory() {
@@ -142,5 +104,10 @@ namespace RobbyTheRobot {
         rect.setPosition(sf::Vector2f((float)(fieldVector.getX() * scaling_factor), (float)(fieldVector.getY() * scaling_factor)));
         window_ptr->draw(rect);
     }
+
+    void Display::clearScreen() {
+        window_ptr->clear();
+    }
+
 
 }

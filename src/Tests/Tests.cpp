@@ -79,11 +79,11 @@ namespace RobbyTheRobot {
 
     bool Tests::dispatchTest() {
         try {
-            int n = 1000;
+            int n = 200;
             double hFactor = 3.2;
             World w(n);
             clock_t start = clock();
-            Dispatcher dis(&w, hFactor);
+            Dispatcher dis(&w, nullptr, hFactor);
             dis.createFactoryToMinsPaths();
             dis.printPathCosts();
             clock_t end = clock();

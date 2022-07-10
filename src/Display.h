@@ -23,15 +23,11 @@ namespace RobbyTheRobot {
 
         ~Display() { delete this->window_ptr; }
 
-        void draw();
-
         void calc_line(Vector2i& start, Vector2i& end);
 
         sf::RenderWindow* getWindowPtr() const;
 
         void drawVisitedFields(sf::RenderWindow* win_ptr, Vector2i fieldVector, int green, int blue);
-
-    private:
 
         void draw_times();
 
@@ -41,7 +37,11 @@ namespace RobbyTheRobot {
 
         void draw_factory();
 
+        void clearScreen();
+
         void draw_line(Vector2i start, Vector2i end);
+
+    private:
 
         World* wp;
 

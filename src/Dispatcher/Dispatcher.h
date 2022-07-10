@@ -6,6 +6,7 @@
 #define ROBOT_DISPATCHER_H
 
 #include <memory>
+#include <map>
 
 #include "../World.h"
 #include "../graph/Graph.h"
@@ -15,11 +16,13 @@ namespace RobbyTheRobot {
 
     using namespace std;
 
+    enum class dStates{drawStaticStuff, empty};
+
     class Dispatcher {
 
     public:
 
-        Dispatcher(World* w, double hFactor);
+        Dispatcher(World* w, Display* d, double hFactor);
 
         ~Dispatcher() = default;
 
@@ -27,9 +30,13 @@ namespace RobbyTheRobot {
 
         void printPathCosts();
 
+        void vis();
+
     private:
 
         World* w;
+
+        Display* d;
 
         AStarSearch aStar;
 
@@ -37,6 +44,7 @@ namespace RobbyTheRobot {
 
         Vertex* FactoryVertex;
 
+        map<Vector2i, Vertex*> coordinatesToVertexMap;
     };
 }
 
